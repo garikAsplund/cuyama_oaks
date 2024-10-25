@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Footer from '$lib/Footer.svelte';
+	import MobileFooter from '$lib/MobileFooter.svelte';
 	import Nav from '$lib/Nav.svelte';
 	import '../app.css';
 	let { children } = $props();
@@ -31,12 +32,10 @@
 	<!-- Hero text -->
 	<header
 		class="fixed w-full transition-all duration-300 z-10"
-		class:translate-y-[40vh]={scrollY < 100}
-		class:bg-black={scrollY >= 100}
 	>
 		<div class="container mx-auto px-4 py-6 text-center">
 			<h1
-				class="text-8xl font-bold text-white transition-all font-['Bona_Nova_SC']"
+				class="text-4xl md:text-8xl md:font-bold text-white transition-all font-['Bona_Nova_SC'] translate-y-0 md:translate-y-[40vh]"
 				class:text-7xl={scrollY < 100}
 			>
 				Cuyama Oaks Ranch
@@ -51,4 +50,5 @@
 	<div class="h-full"></div>
 
 	<Footer />
+	<MobileFooter />
 </div>
