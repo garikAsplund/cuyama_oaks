@@ -31,7 +31,7 @@
 
 	<!-- Hero text -->
 	<header
-		class="fixed w-full transition-all duration-300 z-10"
+		class="fixed w-full transition-all duration-300"
 	>
 		<div class="container mx-auto px-4 py-6 text-center">
 			<h1
