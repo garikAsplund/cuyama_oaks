@@ -4,8 +4,12 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {}
-	},
+        extend: {
+            fontFamily: {
+                'bona': ['Bona Nova SC', 'sans-serif'], // Add your custom font
+            },
+        },
+    },
 
 	plugins: []
 } as Config;

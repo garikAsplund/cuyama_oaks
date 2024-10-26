@@ -1,3 +1,28 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'Bona Nova SC';
+    src: url('/fonts/BonaNovaSC-Regular.ttf') format('truetype');
+    font-weight: normal; /* Regular weight */
+    font-style: normal;  /* Regular style */
+}
+
+@font-face {
+    font-family: 'Bona Nova SC';
+    src: url('/fonts/BonaNovaSC-Bold.ttf') format('truetype');
+    font-weight: bold;   /* Bold weight */
+    font-style: normal;  /* Regular style */
+}
+
+@font-face {
+    font-family: 'Bona Nova SC';
+    src: url('/fonts/BonaNovaSC-Italic.ttf') format('truetype');
+    font-weight: normal; /* Regular weight */
+    font-style: italic;  /* Italic style */
+}
+
+html {
+    scroll-behavior: smooth;
+}
