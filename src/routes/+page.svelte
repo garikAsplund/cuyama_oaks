@@ -10,6 +10,7 @@
 	import '../app.css';
 	import ToTopButton from '$lib/ToTopButton.svelte';
 	import Explore from '$lib/Explore.svelte';
+	import Reviews from '$lib/Reviews.svelte';
 
 	let scrollY = $state(0);
 </script>
@@ -29,24 +30,29 @@
 	<!-- Add a wrapper div with overflow-x-hidden around content that needs containment -->
 	<div class="overflow-x-hidden">
 		<!-- Fullscreen background image -->
-		<div class="relative h-screen">
-			<enhanced:img
-				src="/static/cuyama_oaks_bg.jpeg"
-				alt="Cuyama Oaks Ranch"
-				class="w-full h-full object-cover"
-			/>
-			<div class="absolute inset-0 bg-black bg-opacity-30"></div>
+		<div class="relative h-auto">
+			<div class="relative h-screen">
+				<enhanced:img
+					src="/static/cuyama_oaks_bg.jpeg"
+					alt="Cuyama Oaks Ranch"
+					class="w-full h-full object-cover"
+				/>
+				<div class="absolute inset-0 bg-black bg-opacity-30"></div>
 
-			<Nav />
+				<Nav />
 
-			<header class="absolute inset-0 flex flex-col justify-center items-center text-center z-10">
-				<div class="container mx-auto" style="transform: translateY(calc({scrollY * -1.05}px))">
-					<h1 class="text-4xl md:text-8xl md:font-bold text-white font-bona transition-all">
-						Cuyama Oaks Ranch
-					</h1>
-					<BookNowButton />
-				</div>
-			</header>
+				<header class="absolute inset-0 flex flex-col justify-center items-center text-center">
+					<div class="container mx-auto" style="transform: translateY(calc({scrollY * -1.05}px))">
+						<h1 class="text-4xl md:text-8xl md:font-bold text-white font-bona transition-all">
+							Cuyama Oaks Ranch
+						</h1>
+						<BookNowButton />
+					</div>
+				</header>
+			</div>
+			<div class="container mx-auto z-70" style="transform: translateY(calc({scrollY * -1.45}px))">
+				<Reviews />
+			</div>
 		</div>
 
 		<section class="scroll-mt-12" id="About">
@@ -120,7 +126,10 @@
 			class="sticky h-screen object-cover bg-cover bg-center flex justify-center items-center z-10 max-w-full"
 		/>
 
-		<section class="relative h-[150vh] p-8 bg-yellow-300 flex flex-col z-5 max-w-full" id="Camping">
+		<section
+			class="relative h-[150vh] p-8 bg-yellow-300 flex flex-col z-5 max-w-full scroll-mt-12"
+			id="Camping"
+		>
 			<h2
 				class="sticky top-16 font-bona text-6xl md:text-8xl mt-12 md:mt-48 pr-16 lg:pr-32 lg:text-end text-center w-full hidden md:block"
 			>
