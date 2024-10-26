@@ -7,6 +7,7 @@
     src: url('/fonts/BonaNovaSC-Regular.ttf') format('truetype');
     font-weight: normal; /* Regular weight */
     font-style: normal;  /* Regular style */
+    font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
     src: url('/fonts/BonaNovaSC-Bold.ttf') format('truetype');
     font-weight: bold;   /* Bold weight */
     font-style: normal;  /* Regular style */
+    font-display: swap;
 }
 
 @font-face {
@@ -21,6 +23,7 @@
     src: url('/fonts/BonaNovaSC-Italic.ttf') format('truetype');
     font-weight: normal; /* Regular weight */
     font-style: italic;  /* Italic style */
+    font-display: swap;
 }
 
 html {
