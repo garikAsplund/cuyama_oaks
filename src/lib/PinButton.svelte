@@ -1,5 +1,5 @@
 <script lang="ts">
-	import MapSvg from './MapSVG.svelte';
+	import MapSvg from '$lib/SVGs/MapSVG.svelte';
 	import { onMount } from 'svelte';
 
 	let directionsLink = '';

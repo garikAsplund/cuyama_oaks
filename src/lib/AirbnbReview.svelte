@@ -1,5 +1,5 @@
 <script>
-	import AirbnbSVG from './AirbnbSVG.svelte';
+	import AirbnbSVG from './SVGs/AirbnbSVG.svelte';
 </script>
 
 <a href="https://www.airbnb.com/users/show/37274212" aria-label="See our Airbnb reviews" class="hover:opacity-75">

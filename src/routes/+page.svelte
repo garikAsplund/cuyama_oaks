@@ -51,12 +51,13 @@
             <div class="overflow-hidden">
                 <section class="relative w-full flex justify-center h-[66vh]">
                     <div
-                        class="absolute top-20 right-[5%] w-1/2 h-full z-0"
+                        class="md:absolute top-20 right-[5%] w-1/2 h-full z-0 hidden md:block"
                         style="background: linear-gradient(45deg, rgba(255, 0, 0, 0.13), rgba(255, 154, 0, 0.13), rgba(255, 255, 0, 0.13), rgba(0, 255, 0, 0.13), rgba(0, 0, 255, 0.13), rgba(75, 0, 130, 0.13), rgba(143, 0, 255, 0.13));"
                     ></div>
         
                     <enhanced:img
                         src="/static/nate+ricky.jpeg"
+                        id="gay-boys"
                         alt="Your hosts Nate and Ricky"
                         class="object-contain absolute top-20 right-[5%] w-1/2 -z-10"
                         style="transform: translateY(calc({scrollY} * 0.02px));"

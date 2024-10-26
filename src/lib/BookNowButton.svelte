@@ -1,5 +1,5 @@
 <script lang="ts">
-	import CalendarSvg from './CalendarSVG.svelte';
+	import CalendarSvg from '$lib/SVGs/CalendarSVG.svelte';
 </script>
 
 <a

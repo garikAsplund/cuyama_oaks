@@ -1,10 +1,7 @@
 <script lang="ts">
-	import GoogleReview from './GoogleReview.svelte';
-	import HipcampReview from './HipcampReview.svelte';
-	import AirbnbReview from './AirbnbReview.svelte';
-	import AirbnbSVG from './AirbnbSVG.svelte';
-	import HipcampSVG from './HipcampSVG.svelte';
-	import GoogleSVG from './GoogleSVG.svelte';
+	import AirbnbSVG from '$lib/SVGs/AirbnbSVG.svelte';
+	import HipcampSVG from '$lib/SVGs/HipcampSVG.svelte';
+	import GoogleSVG from '$lib/SVGs/GoogleSVG.svelte';
 
 	const reviews = [
 		{
