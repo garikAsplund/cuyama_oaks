@@ -5,9 +5,53 @@
 		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
+		<!-- Title -->
+		<title>Cuyama Oaks Ranch</title>
+		<meta
+			name="description"
+			content="Discover the hidden gems of Cuyama Oaks Ranch, a glamping and camping destination for family and friends!"
+		/>
+
+		<!-- OG tags -->
+		<meta property="og:title" content="Cuyama Oaks Ranch | Glamping, Camping & Adventures" />
+		<meta property="og:description" content="Discover the hidden gems of Cuyama Oaks Ranch, a top glamping and camping destination for outdoor enthusiasts." />
+		<meta property="og:image" content="https://yourdomain.com/static/cover-image.jpg" />
+		<meta property="og:url" content="https://yourdomain.com" />
+		<meta property="og:type" content="website" />
+
+		<!-- Twitter tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Cuyama Oaks Ranch | Glamping, Camping & Adventures" />
+		<meta name="twitter:description" content="Discover the hidden gems of Cuyama Oaks Ranch, a top glamping and camping destination for outdoor enthusiasts." />
+		<meta name="twitter:image" content="https://yourdomain.com/static/cover-image.jpg" />		
+
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Place",
+				"name": "Cuyama Oaks Ranch",
+				"description": "A serene glamping and camping destination for families and friends.",
+				"image": "https://yourdomain.com/static/cover-image.jpg",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "123 Oak Lane",
+					"addressLocality": "Cuyama",
+					"addressRegion": "CA",
+					"postalCode": "93454",
+					"addressCountry": "US"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": "35.0519",
+					"longitude": "-119.4643"
+				},
+				"url": "https://yourdomain.com"
+			}
+			</script>			
+
+		<!-- Fonts -->
 		<link rel="preload" href="/fonts/BonaNovaSC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 		<link rel="preload" href="/fonts/BonaNovaSC-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-		<link rel="preload" href="/fonts/BonaNovaSC-Italic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 	
 		%sveltekit.head%
 	</head>

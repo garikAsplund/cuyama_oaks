@@ -38,7 +38,7 @@
 				<div class="flex flex-col items-center justify-center space-y-1">
 					<div class="w-12 h-12 flex items-center justify-center">
 						<!-- SVG container with fixed size -->
-						<svelte:component this={review.svg} class="w-full h-full" />
+						<svelte:component this={review.svg}  />
 					</div>
 					<div class="flex items-center space-x-2" aria-hidden="true">
 						<p>{review.rating}</p>
