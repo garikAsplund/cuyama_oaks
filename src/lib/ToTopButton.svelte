@@ -1,4 +1,4 @@
-<a href="#top" aria-label="Back to top of the page" class="flex flex-col h-fit justify-end items-center scale-150 text-white hover:opacity-80 mt-60">
+<a href="#top" aria-label="Back to top of the page" class="flex flex-col h-fit justify-end items-center scale-150 text-white hover:opacity-75 opacity-85 mt-60">
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	width="24"

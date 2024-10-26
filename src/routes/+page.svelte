@@ -55,7 +55,7 @@
 			</div>
 		</div>
 
-		<section class="scroll-mt-12" id="About">
+		<section class="scroll-mt-36" id="About">
 			<div class="overflow-hidden">
 				<section class="relative w-full flex justify-center h-[66vh]">
 					<enhanced:img
