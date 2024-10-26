@@ -107,6 +107,12 @@
 			</div>
 		</section>
 
+        <section
+        class="sticky h-screen bg-cover bg-center flex justify-center items-center z-10 max-w-full"
+        style="background-image: url('/parallax_4.jpeg');"
+    >
+     </section>
+
 		<section
 			class="relative h-[150vh] p-8 bg-yellow-300 flex flex-col z-5 scroll-mt-12 max-w-full"
 			id="Camping"
