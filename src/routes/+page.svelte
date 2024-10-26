@@ -87,8 +87,7 @@
 			<div class="sticky top-0 md:p-16 lg:p-32 md:top-20 flex justify-between z-30 w-full">
 				<div class="w-1/3 p-8 lg:p-16 bg-white/70 md:pl-16 hidden md:block">
 					<h1 class="text-4xl mb-4">Glamping Sites</h1>
-					<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dignissimos.
-                    </p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dignissimos.</p>
 				</div>
 				<div class="pt-12 flex justify-center items-center z-40 w-full bg-teal-300 h-36 md:hidden">
 					<h1 class="text-6xl md:text-8xl font-bold opacity-90">Glamping</h1>
@@ -98,8 +97,11 @@
 				class="w-full md:w-2/3 absolute right-0 px-4 lg:pr-8 h-[300vh] flex flex-col justify-start items-end space-y-96"
 			>
 				{#each glampsites as { name, description, link }}
-					<a href={link} class="mb-4 mt-96 bg-white/70 p-8 rounded-lg shadow-lg w-5/6 md:w-2/3"
-                    style="transform: translateY(calc({scrollY * -0.1}px))">
+					<a
+						href={link}
+						class="mb-4 mt-96 bg-white/70 p-8 rounded-lg shadow-lg w-5/6 md:w-2/3"
+						style="transform: translateY(calc({scrollY * -0.1}px))"
+					>
 						<h2 class="text-4xl font-bold">{name}</h2>
 						<p>{description}</p>
 					</a>
@@ -107,35 +109,50 @@
 			</div>
 		</section>
 
-        <section
+		<!-- <section
         class="sticky h-screen bg-cover bg-center flex justify-center items-center z-10 max-w-full"
         style="background-image: url('/parallax_4.jpeg');"
     >
-     </section>
+     </section> -->
+		<enhanced:img
+			src="/static/parallax_4.jpeg"
+			alt="Cuyama Oaks Ranch"
+			class="sticky h-screen object-cover bg-cover bg-center flex justify-center items-center z-10 max-w-full"
+		/>
 
-     <section class="relative h-[150vh] p-8 bg-yellow-300 flex flex-col z-5 max-w-full" id="Camping">
-        <h2 class="sticky top-16 font-bona text-6xl md:text-8xl mt-12 md:mt-48 pr-16 lg:pr-32 lg:text-end text-center w-full hidden md:block">
-            Camping
-        </h2>
-        <div class="sticky top-0 flex font-bona justify-center items-center z-40 w-full bg-yellow-300 h-36 md:hidden">
-            <h1 class="text-6xl md:text-8xl opacity-90">Camping</h1>
-        </div>
-        <div class="w-full md:w-2/3 md:pl-32 px-4 lg:pr-8 h-auto flex flex-col justify-start items-start space-y-16 mt-20">
-            {#each campsites as { name, description, link }}
-                <a href={link} class="mb-4 bg-white p-8 rounded-lg shadow-lg w-5/6 md:w-2/3">
-                    <h2 class="text-4xl font-bold">{name}</h2>
-                    <p>{description}</p>
-                </a>
-            {/each}
-        </div>
-    </section>
-    
+		<section class="relative h-[150vh] p-8 bg-yellow-300 flex flex-col z-5 max-w-full" id="Camping">
+			<h2
+				class="sticky top-16 font-bona text-6xl md:text-8xl mt-12 md:mt-48 pr-16 lg:pr-32 lg:text-end text-center w-full hidden md:block"
+			>
+				Camping
+			</h2>
+			<div
+				class="sticky top-0 flex font-bona justify-center items-center z-40 w-full bg-yellow-300 h-36 md:hidden"
+			>
+				<h1 class="text-6xl md:text-8xl opacity-90">Camping</h1>
+			</div>
+			<div
+				class="w-full md:w-2/3 md:pl-32 px-4 lg:pr-8 h-auto flex flex-col justify-start items-start space-y-16 mt-20"
+			>
+				{#each campsites as { name, description, link }}
+					<a href={link} class="mb-4 bg-white p-8 rounded-lg shadow-lg w-5/6 md:w-2/3">
+						<h2 class="text-4xl font-bold">{name}</h2>
+						<p>{description}</p>
+					</a>
+				{/each}
+			</div>
+		</section>
 
-		<section
+		<!-- <section
 			class="sticky h-[66vh] bg-cover bg-center flex justify-center items-center z-10 max-w-full"
-			style="background-image: url('/parallax_2.jpeg'); filter: grayscale(calc(1 - {scrollY *
-				0.00007}));"
-		></section>
+			
+		> -->
+		<enhanced:img
+			src="/static/parallax_2.jpeg"
+			alt="Cuyama Oaks Ranch"
+			class="w-full object-cover sticky h-[66vh] bg-cover bg-center flex justify-center items-center z-10 max-w-full"
+		/>
+		<!-- </section> -->
 
 		<section
 			class="sticky top-0 h-screen p-8 bg-blue-300 flex flex-col z-5 max-w-full"
@@ -153,14 +170,19 @@
 					</a>
 				{/each}
 			</div> -->
-            <!-- <Explore /> -->
+			<!-- <Explore /> -->
 		</section>
 
 		<section
-			class="sticky h-screen bg-cover bg-center flex justify-center items-center z-10 saturate-[55%] max-w-full"
-			style="background-image: url('/parallax_3.jpeg');"
+			class="sticky h-screen bg-center flex justify-center items-center z-10 saturate-[55%] max-w-full"
 		>
-			<ToTopButton />
+			<enhanced:img
+				src="/static/parallax_3.jpeg"
+				alt="Cuyama Oaks Ranch"
+				class="absolute inset-0 w-full h-full object-cover z-0"
+			/>
+			<ToTopButton class="relative z-10" />
+			<!-- Ensure the button stays above the image -->
 		</section>
 
 		<div class="sticky h-14 bg-orange-400 flex justify-center items-center text-white w-full"></div>
