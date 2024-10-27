@@ -14,7 +14,7 @@
 
 	const LATITUDE = '34.94';
 	const LONGITUDE = '-119.80';
-	const API_KEY = '813bbdb3ad62ce7ec002f73cad68f9f4';
+	const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
 	$effect(() => {
 		const fetchWeather = async () => {
