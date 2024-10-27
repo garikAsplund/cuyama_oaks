@@ -10,7 +10,7 @@
 		<a href="#Camping" class="p-2 hover:opacity-75">Camping</a>
 		<a href="#ThingsToDo" class="p-2 hover:opacity-75">Things To Do</a>
 	</div>
-	<div class="flex justify-between">
+	<div class="flex justify-between items-center">
 		<WeatherWidget />
 		<Instagram />
 	</div>

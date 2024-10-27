@@ -47,6 +47,7 @@
 			</div>
 		</div>
 
+        <!-- About -->
 		<section class="scroll-mt-36" id="About">
             <div class="overflow-hidden">
                 <section class="relative w-full flex justify-center h-[66vh]">
@@ -85,6 +86,7 @@
 	</div>
 
 	<main class="relative flex-1 w-full max-w-screen">
+        <!-- Glamping -->
 		<section class="h-[300vh] relative bg-teal-300 w-full" id="Glamping">
 			<div class="sticky top-0 md:p-16 lg:p-32 md:top-20 flex justify-between z-30 w-full">
 				<div class="w-1/3 p-8 lg:p-16 bg-white/70 md:pl-16 hidden md:block">
@@ -111,17 +113,14 @@
 			</div>
 		</section>
 
-		<!-- <section
-        class="sticky h-screen bg-cover bg-center flex justify-center items-center z-10 max-w-full"
-        style="background-image: url('/parallax_4.jpeg');"
-    >
-     </section> -->
+     <!-- Goats -->
 		<enhanced:img
 			src="/static/parallax_4.jpeg"
 			alt="Cuyama Oaks Ranch"
 			class="sticky h-screen object-cover bg-cover bg-center flex justify-center items-center z-10 max-w-full"
 		/>
 
+        <!-- Camping -->
 		<section
 			class="relative h-[150vh] p-8 bg-yellow-300 flex flex-col z-5 max-w-full scroll-mt-12"
 			id="Camping"
@@ -148,36 +147,23 @@
 			</div>
 		</section>
 
-		<!-- <section
-			class="sticky h-[66vh] bg-cover bg-center flex justify-center items-center z-10 max-w-full"
-			
-		> -->
+<!-- Fun -->
 		<enhanced:img
 			src="/static/parallax_2.jpeg"
 			alt="Cuyama Oaks Ranch"
 			class="w-full object-cover sticky h-[66vh] bg-cover bg-center flex justify-center items-center z-10 max-w-full"
 		/>
-		<!-- </section> -->
 
+        <!-- Things To Do -->
 		<section
 			class="sticky top-0 h-screen p-8 bg-blue-300 flex flex-col z-5 max-w-full"
 			id="ThingsToDo"
 		>
 			<h2 class="font-bona text-8xl flex justify-center mt-24">Explore</h2>
 
-			<!-- <div
-				class="w-full md:w-2/3 mx-auto px-4 lg:pr-8 h-auto flex flex-col justify-start items-end space-y-24 mt-24"
-			>
-				{#each explore as { name, description, link }}
-					<a href={link} class="mb-4  p-8 w-5/6 md:w-2/3">
-						<h2 class="text-4xl font-bold">{name}</h2>
-						<p>{description}</p>
-					</a>
-				{/each}
-			</div> -->
-			<!-- <Explore /> -->
 		</section>
 
+        <!-- Things To Do -->
 		<section
 			class="sticky h-screen bg-center flex justify-center items-center z-10 saturate-[55%] max-w-full"
 		>
@@ -187,7 +173,6 @@
 				class="absolute inset-0 w-full h-full object-cover z-0"
 			/>
 			<ToTopButton class="relative z-10" />
-			<!-- Ensure the button stays above the image -->
 		</section>
 
 		<div class="sticky h-14 bg-orange-400 flex justify-center items-center text-white w-full"></div>
