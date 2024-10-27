@@ -34,13 +34,11 @@
 			<a href={review.link} aria-label="See our {review.name} Reviews" class="hover:opacity-75">
 				<div class="flex flex-col items-center justify-center space-y-1">
 					<div class="w-12 h-12 flex items-center justify-center">
-						<!-- SVG container with fixed size -->
 						<svelte:component this={review.svg}  />
 					</div>
 					<div class="flex items-center space-x-2" aria-hidden="true">
 						<p>{review.rating}</p>
 						{#if review.name === 'Hipcamp'}
-							<!-- Star SVG for Hipcamp -->
 							<svg
 								class="text-white w-4 h-4"
 								stroke="currentColor"
@@ -54,7 +52,6 @@
 								/>
 							</svg>
 						{:else}
-							<!-- Star SVG for other reviews -->
 							<svg
 								class="w-4 h-4 text-white"
 								xmlns="http://www.w3.org/2000/svg"
