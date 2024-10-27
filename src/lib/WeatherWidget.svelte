@@ -44,9 +44,12 @@
 </script>
 
 <div class="flex items-center gap-2 p-2">
-	<img
-		src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`}
-		alt="Weather icon"
-		class="w-8 h-8 -m-2 saturate-0"
-	/> <span class="text-white opacity-80">{weather.temp}°</span>
+	{#if weather.loading === false}
+		<img
+			src={`/weather/${weather.icon}@2x.png`}
+			alt="Weather icon"
+			class="w-8 h-8 -m-2 saturate-0"
+		/>
+	{/if}
+	<span class="text-white opacity-80">{weather.temp}°</span>
 </div>
