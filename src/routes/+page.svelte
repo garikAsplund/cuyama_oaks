@@ -84,7 +84,7 @@
 		>
 			<enhanced:img
 				src="/static/parallax_3.jpeg"
-				alt="Cuyama Oaks Ranch"
+				alt="Welcome to Cuyama Oaks Ranch"
 				class="absolute inset-0 w-full h-full object-cover z-0"
 			/>
 			<ToTopButton class="relative z-10" />
