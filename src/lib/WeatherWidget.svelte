@@ -1,4 +1,3 @@
-<!-- src/lib/components/WeatherWidget.svelte -->
 <script lang="ts">
 	type WeatherData = {
 		temp: number;

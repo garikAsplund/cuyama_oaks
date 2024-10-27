@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { campsites } from './campsites';
+	import { campsites } from '$lib/campsites';
 </script>
 
 <section
@@ -7,7 +7,7 @@
 	id="Camping"
 >
 	<h2
-		class="sticky top-16 font-bona text-6xl md:text-8xl mt-12 md:mt-48 pr-16 lg:pr-32 lg:text-end text-center w-full hidden md:block"
+		class="sticky top-16 font-bona text-6xl md:text-8xl pt-12 md:pt-36 pr-16 lg:pr-32 lg:text-end text-center w-full hidden md:block"
 	>
 		Camping
 	</h2>
@@ -16,6 +16,7 @@
 	>
 		<h1 class="text-6xl md:text-8xl opacity-90">Camping</h1>
 	</div>
+
 	<!-- <div
 		class="w-full md:w-2/3 md:pl-32 px-4 lg:pr-8 h-auto flex flex-col justify-start items-start space-y-16 mt-20"
 	>

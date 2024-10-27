@@ -1,19 +1,17 @@
 <script lang="ts">
-	import BookNowButton from '$lib/BookNowButton.svelte';
-	import { fade, slide } from 'svelte/transition';
-	import Footer from '$lib/Footer.svelte';
-	import MobileFooter from '$lib/MobileFooter.svelte';
-	import Nav from '$lib/Nav.svelte';
-	import { campsites } from '$lib/campsites';
-	import { glampsites } from '$lib/glampsites';
-	import { explore } from '$lib/explore';
 	import '../app.css';
+	import { onMount } from 'svelte';
+
+	import BookNowButton from '$lib/BookNowButton.svelte';
+	import Footer from '$lib/MainPage/Footer.svelte';
+	import MobileFooter from '$lib/MainPage/MobileFooter.svelte';
+	import Nav from '$lib/MainPage/Nav.svelte';
 	import ToTopButton from '$lib/ToTopButton.svelte';
-	import Explore from '$lib/Explore.svelte';
-	import Reviews from '$lib/Reviews.svelte';
-	import About from '$lib/About.svelte';
-	import Glamping from '$lib/Glamping.svelte';
-	import Camping from '$lib/Camping.svelte';
+	import Explore from '$lib/MainPage/Explore.svelte';
+	import Reviews from '$lib/MainPage/Reviews.svelte';
+	import About from '$lib/MainPage/About.svelte';
+	import Glamping from '$lib/MainPage/Glamping.svelte';
+	import Camping from '$lib/MainPage/Camping.svelte';
 
 	let scrollY = $state(0);
 </script>
@@ -33,9 +31,7 @@
 					class="w-full h-full object-cover"
 				/>
 				<div class="absolute inset-0 bg-black bg-opacity-30"></div>
-
 				<Nav />
-
 				<header class="absolute inset-0 flex flex-col justify-center items-center text-center">
 					<div class="container mx-auto" style="transform: translateY(calc({scrollY * -1.05}px))">
 						<h1 class="text-4xl md:text-8xl md:font-bold text-white font-bona transition-all">
@@ -45,6 +41,7 @@
 					</div>
 				</header>
 			</div>
+
 			<div class="container mx-auto z-70" style="transform: translateY(calc({scrollY * -1.45}px))">
 				<Reviews />
 			</div>
@@ -98,3 +95,27 @@
 		<MobileFooter />
 	</div>
 </div>
+
+<style>
+	.animate-on-scroll {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translateY(20px);
+		transition: all 1s ease-out;
+	}
+
+	.animate-on-scroll.show {
+		opacity: 1;
+		filter: blur(0);
+		transform: translateY(0);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.animate-on-scroll {
+			transition: none;
+			opacity: 1;
+			filter: none;
+			transform: none;
+		}
+	}
+</style>
