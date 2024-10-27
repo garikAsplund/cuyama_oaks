@@ -23,7 +23,6 @@
 					`https://api.openweathermap.org/data/2.5/weather?lat=${LATITUDE}&lon=${LONGITUDE}&appid=${API_KEY}&units=imperial`
 				);
 				const data = await response.json();
-				console.log({ data });
 
 				weather = {
 					temp: Math.round(data.main.temp),

@@ -16,7 +16,7 @@
 	>
 		<h1 class="text-6xl md:text-8xl opacity-90">Camping</h1>
 	</div>
-	<div
+	<!-- <div
 		class="w-full md:w-2/3 md:pl-32 px-4 lg:pr-8 h-auto flex flex-col justify-start items-start space-y-16 mt-20"
 	>
 		{#each campsites as { name, description, link }}
@@ -25,5 +25,5 @@
 				<p>{description}</p>
 			</a>
 		{/each}
-	</div>
+	</div> -->
 </section>

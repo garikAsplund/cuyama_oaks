@@ -3,7 +3,7 @@
     let { scrollY } = $props();
 </script>
 
-<section class="h-[300vh] relative bg-teal-300 w-full" id="Glamping">
+<section class="h-[100vh] relative bg-teal-300 w-full" id="Glamping">
     <div class="sticky top-0 md:p-16 lg:p-32 md:top-20 flex justify-between z-30 w-full">
         <div class="w-1/3 p-8 lg:p-16 bg-white/70 md:pl-16 hidden md:block">
             <h1 class="text-4xl mb-4">Glamping Sites</h1>
@@ -13,7 +13,7 @@
             <h1 class="text-6xl md:text-8xl font-bold opacity-90">Glamping</h1>
         </div>
     </div>
-    <div
+    <!-- <div
         class="w-full md:w-2/3 absolute right-0 px-4 lg:pr-8 h-[300vh] flex flex-col justify-start items-end space-y-96"
     >
         {#each glampsites as { name, description, link }}
@@ -26,5 +26,5 @@
                 <p>{description}</p>
             </a>
         {/each}
-    </div>
+    </div> -->
 </section>
