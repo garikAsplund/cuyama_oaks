@@ -91,7 +91,7 @@
 	</main>
 
 	<div class="overflow-x-hidden">
-		<Footer />
+		<Footer {scrollY}/>
 		<MobileFooter />
 	</div>
 </div>

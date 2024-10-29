@@ -18,11 +18,11 @@
 				Glamping
 			</h1>
 		</div>
-        <div
-		class="sticky top-0 flex justify-center items-center z-40 w-full bg-teal-300 h-36 md:hidden"
-	>
-		<h1 class="text-6xl md:text-8xl opacity-90">Glamping</h1>
-	</div>
+		<div
+			class="sticky top-0 flex justify-center items-center z-40 w-full bg-teal-300 h-36 md:hidden"
+		>
+			<h1 class="text-6xl md:text-8xl opacity-90">Glamping</h1>
+		</div>
 	</div>
 
 	<!-- <div class="space-y-12 w-1/2 absolute right-10 z-10 hidden md:block">

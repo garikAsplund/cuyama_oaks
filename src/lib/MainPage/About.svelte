@@ -19,7 +19,7 @@
             />
 
             <div
-                class="relative -z-10 w-full bg-white/75 h-screen flex flex-col justify-center items-start p-8 pl-8 md:pl-16 lg:pl-32 xl:pl-48 mx-auto space-y-4"
+                class="relative -z-10 w-full bg-white/75 h-[105vh] flex flex-col justify-center items-start p-8 pl-8 md:pl-16 lg:pl-32 xl:pl-48 mx-auto space-y-4 "
                 style="transform: translateY(calc({scrollY} * -0.21px));"
             >
                 <h1 class="text-2xl md:text-4xl lg:text-8xl font-bold mb-4 w-full">Your hosts</h1>

@@ -32,7 +32,7 @@
 				console.error('Failed to fetch weather:', error);
 				weather = {
 					...weather,
-					loading: false
+					loading: true
 				};
 			}
 		};
@@ -54,7 +54,7 @@
 				alt="Weather icon"
 				class="w-8 h-8 -m-2 saturate-0"
 			/>
+			<span class="text-white opacity-80">{weather.temp}°</span>
 		{/if}
-		<span class="text-white opacity-80">{weather.temp}°</span>
 	</div></a
 >
