@@ -2,7 +2,7 @@
     let { scrollY } = $props();
 </script>
 
-<section class="scroll-mt-36" id="About">
+<section class="scroll-mt-16" id="About">
     <div class="overflow-hidden">
         <section class="relative w-full flex justify-center h-[66vh]">
             <div
@@ -22,7 +22,7 @@
                 class="relative -z-10 w-full bg-white/75 h-[105vh] flex flex-col justify-center items-start p-8 pl-8 md:pl-16 lg:pl-32 xl:pl-48 mx-auto space-y-4 "
                 style="transform: translateY(calc({scrollY} * -0.21px));"
             >
-                <h1 class="text-2xl md:text-4xl lg:text-8xl font-bold mb-4 w-full">Your hosts</h1>
+                <h1 class="text-2xl md:text-4xl lg:text-7xl font-bold mb-4 w-full">Your hosts</h1>
                 <p class="text-justify w-5/6 pl-4 md:pl-8 text-xl">
                     We met in Ventura and love seeking new adventures.
                 </p>

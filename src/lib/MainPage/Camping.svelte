@@ -3,7 +3,7 @@
 </script>
 
 <section
-	class="relative h-[150vh] p-8 bg-yellow-300 flex flex-col z-5 max-w-full scroll-mt-12"
+	class="relative h-[95vh] p-8 bg-yellow-300 flex flex-col z-5 max-w-full"
 	id="Camping"
 >
 	<h2

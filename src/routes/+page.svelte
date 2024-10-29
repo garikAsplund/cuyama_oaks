@@ -1,6 +1,5 @@
 <script lang="ts">
 	import '../app.css';
-	import { onMount } from 'svelte';
 
 	import BookNowButton from '$lib/BookNowButton.svelte';
 	import Footer from '$lib/MainPage/Footer.svelte';
@@ -12,8 +11,32 @@
 	import About from '$lib/MainPage/About.svelte';
 	import Glamping from '$lib/MainPage/Glamping.svelte';
 	import Camping from '$lib/MainPage/Camping.svelte';
+	import { onMount } from 'svelte';
 
 	let scrollY = $state(0);
+
+	let isVisible = $state(true);
+    let cardElement: HTMLElement;
+
+    onMount(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    isVisible = true;
+                    // observer.unobserve(entry.target); // Stop observing once visible
+                } else {
+					isVisible = false;
+				}
+            });
+        }, {
+            threshold: 0,
+            rootMargin: ''
+        });
+
+        observer.observe(cardElement);
+
+        return () => observer.disconnect();
+    });
 </script>
 
 <svelte:window bind:scrollY />
@@ -31,8 +54,8 @@
 					class="w-full h-full object-cover"
 				/>
 				<div class="absolute inset-0 bg-black bg-opacity-30"></div>
-				<Nav />
-				<header class="absolute inset-0 flex flex-col justify-center items-center text-center">
+				<Nav {scrollY} {isVisible}/>
+				<header class="absolute inset-0 flex flex-col justify-center items-center text-center" bind:this={cardElement}>
 					<div class="container mx-auto" style="transform: translateY(calc({scrollY * -1.05}px))">
 						<h1 class="text-4xl md:text-8xl md:font-bold text-white font-bona transition-all">
 							Cuyama Oaks Ranch
