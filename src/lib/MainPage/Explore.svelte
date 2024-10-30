@@ -27,7 +27,7 @@
 </script>
 
 <section class="min-h-screen relative h-auto bg-blue-300 p-8 z-30" id="Explore">
-	<h2 class="sticky top-0 pt-12 md:pt-24 font-bona text-8xl text-center w-full bg-blue-300 z-30">
+	<h2 class="sticky top-0 pt-12 md:pt-24 font-bona md:text-8xl text-6xl text-center w-full bg-blue-300 z-30">
 		Explore
 	</h2>
 	<div class="container flex flex-col items-center mx-auto mt-24">
@@ -50,14 +50,14 @@
 				</div>
 			{/each}
 		</div>
-		<div class="flex flex-col justify-center my-24 space-y-24">
+		<div class="flex flex-col justify-center items-center my-24 space-y-24">
 			<a
 				href="https://www.visitcuyama.com/directory"
 				target="_blank"
 				rel="noopenner noreferrer"
 				class="text-3xl font-bold text-center text-opacity-80 hover:opacity-75 p-2"
                 aria-label="Visit Cuyama Directory"
-				><enhanced:img src="/static/visit-cuyama.png" alt="Visit Cuyama" class="invert md:h-24 h-16 w-auto" /> <p class="md:mt-8 mt-4 text-center md:text-3xl text-lg">TOWN DIRECTORY</p>
+				><enhanced:img src="/static/visit-cuyama.png" alt="Visit Cuyama town directory" class="invert cent md:h-24 h-16 w-auto" /> <p class="md:mt-8 mt-4 md:text-3xl text-lg">TOWN DIRECTORY</p>
                 </a
 			>
 			<a

@@ -1,6 +1,5 @@
 <script lang="ts">
 	import '../app.css';
-
 	import BookNowButton from '$lib/BookNowButton.svelte';
 	import Footer from '$lib/MainPage/Footer.svelte';
 	import MobileFooter from '$lib/MainPage/MobileFooter.svelte';
