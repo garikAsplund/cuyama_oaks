@@ -57,7 +57,7 @@
 				rel="noopenner noreferrer"
 				class="text-3xl font-bold text-center text-opacity-80 hover:opacity-75 p-2"
                 aria-label="Visit Cuyama Directory"
-				><enhanced:img src="/static/visit-cuyama.png" alt="Visit Cuyama" class="invert md:h-24 h-16 w-auto" /> <p class="md:mt-8 mt-4 md:text-3xl text-lg">TOWN DIRECTORY</p>
+				><enhanced:img src="/static/visit-cuyama.png" alt="Visit Cuyama" class="invert md:h-24 h-16 w-auto" /> <p class="md:mt-8 mt-4 text-center md:text-3xl text-lg">TOWN DIRECTORY</p>
                 </a
 			>
 			<a
