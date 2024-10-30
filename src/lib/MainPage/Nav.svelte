@@ -15,13 +15,13 @@
 	style="--nav-color: rgb({colorValue}, {colorValue}, {colorValue}, 0.87);"
 >
 	<div class="mx-8 flex items-center space-x-4 nav-items">
-		<a href="#top" class="flex items-center hover:opacity-75 nav-items">
+		<a href="#top" class="flex items-center hover:opacity-75 nav-items" aria-label="Back to the top of the page">
 			<LogoSvg />
 		</a>
-		<a href="#About" class="p-2 hover:opacity-75">About</a>
-		<a href="#Glamping" class="p-2 hover:opacity-75">Glamping</a>
-		<a href="#Camping" class="p-2 hover:opacity-75">Camping</a>
-		<a href="#ThingsToDo" class="p-2 hover:opacity-75">Things To Do</a>
+		<a href="#About" class="p-2 hover:opacity-75" aria-label="About us">About</a>
+		<a href="#Glamping" class="p-2 hover:opacity-75" aria-label="Glamping">Glamping</a>
+		<a href="#Camping" class="p-2 hover:opacity-75" aria-label="Camping">Camping</a>
+		<a href="#ThingsToDo" class="p-2 hover:opacity-75" aria-label="Explore">Explore</a>
 	</div>
 	<div class="flex justify-between items-center nav-items">
 		{#if !isVisible}
