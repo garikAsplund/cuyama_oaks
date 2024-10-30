@@ -52,7 +52,7 @@
 		</div>
 		<div class="flex flex-col justify-center items-center my-24 space-y-24">
 			<a
-				href="https://www.visitcuyama.com/directory"
+				href="https://www.visitcuyama.com/directory#directory-categories"
 				target="_blank"
 				rel="noopenner noreferrer"
 				class="text-3xl font-bold text-center text-opacity-80 hover:opacity-75 p-2"
