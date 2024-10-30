@@ -18,7 +18,7 @@
 			<h1 class="text-6xl mt-8 opacity-90">Glamping</h1>
 		</div>
 	</div>
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 h-full ">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 h-full mt-16 ">
 		<!-- Left side: Images -->
 
 		<div class="flex flex-col justify-center h-full gap-4">
@@ -42,7 +42,7 @@
 		</div>
 
 		<!-- Right side: Amenities -->
-		<div class="flex flex-col items-center space-y-8 my-12">
+		<div class="flex flex-col items-center md:-translate-x-16 space-y-8 my-12">
 			{#each amenities as amenity}
 				<div class="space-y-4">
 					<h2 class="text-2xl font-bold">{amenity.title}</h2>

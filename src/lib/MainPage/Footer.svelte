@@ -5,7 +5,7 @@
 </script>
 
 <footer
-	class="fixed bottom-0 w-full md:flex justify-center items-center text-white opacity-70 text-center p-4 space-x-4 hidden"
+	class="fixed bottom-0 w-full md:flex justify-center items-center text-white opacity-70 text-center p-4 space-x-4 hidden z-0"
   style=" color: rgb({colorValue}, {colorValue}, {colorValue});"
   >
 	<p>cuyamaoaksranch@gmail.com</p>

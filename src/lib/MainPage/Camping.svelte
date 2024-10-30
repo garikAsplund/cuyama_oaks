@@ -3,14 +3,15 @@
 </script>
 
 <section class="relative h-auto p-8 bg-yellow-300 flex flex-col z-5 max-w-full z-20" id="Camping">
-	<h2 class="sticky top-0 font-bona text-6xl md:text-8xl bg-inherit md:pt-20 lg:text-end text-center w-full hidden md:block">
+	<div class="sticky top-0 w-full bg-inherit">
+	<h2 class="w-[80%]  font-bona text-6xl md:text-8xl bg-inherit md:pt-20 lg:text-end  text-center hidden md:block">
 		Camping
-	</h2>
+	</h2></div>
 	<div class="sticky top-0 flex font-bona justify-center items-center z-40 w-full bg-yellow-300 h-36 md:hidden">
 		<h1 class="text-6xl md:text-8xl opacity-90">Camping</h1>
 	</div>
 
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 h-full mx-auto my-12 md:my-24">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 h-full mx-auto md:my-24">
 		<!-- Image Section -->
 		<div class="flex flex-col justify-center h-full gap-4 order-1 md:order-2">
 			<div class="grid grid-cols-2 gap-4">
@@ -21,7 +22,7 @@
 		</div>
 
 		<!-- Description Section -->
-		<div class="flex flex-col items-center space-y-8 order-2 md:order-1 my-12 md:my-24">
+		<div class="flex flex-col items-start space-y-8 order-2 md:order-1 my-12 md:my-24">
 			{#each campsites as amenity}
 				<div class="space-y-4">
 					<h2 class="text-2xl font-bold">{amenity.name}</h2>
