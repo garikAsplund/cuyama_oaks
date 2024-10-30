@@ -1,8 +1,6 @@
 <!-- GlampingSection.svelte -->
 <script lang="ts">
 	import { amenities } from '$lib/amenities';
-
-    let { scrollY } = $props();
 </script>
 
 <section class="h-auto relative bg-teal-300 max-w-full w-full p-8 z-20" id="Glamping">

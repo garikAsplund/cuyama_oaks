@@ -26,7 +26,7 @@
 	];
 </script>
 
-<section class="min-h-screen relative h-auto bg-blue-300 p-8 z-30" id="ThingsToDo">
+<section class="min-h-screen relative h-auto bg-blue-300 p-8 z-30" id="Explore">
 	<h2 class="sticky top-0 pt-12 md:pt-24 font-bona text-8xl text-center w-full bg-blue-300 z-30">
 		Explore
 	</h2>

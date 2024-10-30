@@ -5,9 +5,32 @@
 	import LogoSvg from '$lib/SVGs/LogoSVG.svelte';
 	import WeatherWidget from '$lib/WeatherWidget.svelte';
 	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
 
 	let { scrollY, isVisible } = $props();
 	const colorValue = $derived(Math.round(255 - scrollY * 0.2));
+
+	let activeSection = $state('');
+
+    onMount(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    activeSection = entry.target.id;
+					console.log(activeSection);
+				}
+            });
+        }, {
+            threshold: 0.8,
+            rootMargin: '200px'
+        });
+
+		document.querySelectorAll('section').forEach((section) => {
+			observer.observe(section);
+		});
+
+        return () => observer.disconnect();
+    });
 </script>
 
 <nav
@@ -18,10 +41,10 @@
 		<a href="#top" class="flex items-center hover:opacity-75 nav-items" aria-label="Back to the top of the page">
 			<LogoSvg />
 		</a>
-		<a href="#About" class="p-2 hover:opacity-75" aria-label="About us">About</a>
-		<a href="#Glamping" class="p-2 hover:opacity-75" aria-label="Glamping">Glamping</a>
-		<a href="#Camping" class="p-2 hover:opacity-75" aria-label="Camping">Camping</a>
-		<a href="#ThingsToDo" class="p-2 hover:opacity-75" aria-label="Explore">Explore</a>
+		<a href="#About" class="p-2 hover:opacity-75 {activeSection === 'About' ? 'border-black border-b' : ''}" aria-label="About us">About</a>
+		<a href="#Glamping" class="p-2 hover:opacity-75 {activeSection === 'Glamping' ? 'border-black border-b' : ''}" aria-label="Glamping">Glamping</a>
+		<a href="#Camping" class="p-2 hover:opacity-75 {activeSection === 'Camping' ? 'border-black border-b' : ''}" aria-label="Camping">Camping</a>
+		<a href="#Explore" class="p-2 hover:opacity-75 {activeSection === 'Explore' ? 'border-black border-b' : ''}" aria-label="Explore">Explore</a>
 	</div>
 	<div class="flex justify-between items-center nav-items">
 		{#if !isVisible}
