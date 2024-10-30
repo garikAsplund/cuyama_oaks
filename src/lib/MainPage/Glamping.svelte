@@ -1,38 +1,58 @@
 <!-- GlampingSection.svelte -->
 <script lang="ts">
 	import { amenities } from '$lib/amenities';
-	import AmenityCard from '$lib/AmenityCard.svelte';
-	import AmenityCardMobile from '$lib/AmenityCardMobile.svelte';
 
-	let { scrollY } = $props();
-	const baseHeight = 10; // vh units per card
-	const minHeight = 100; // minimum vh
-
-	let sectionHeight = $derived(`${Math.max(minHeight, baseHeight * amenities.length)}vh`);
+    let { scrollY } = $props();
 </script>
 
-<section class=" relative bg-teal-300 w-full" style="height: {sectionHeight}" id="Glamping">
-	<div class="sticky top-0 md:p-16 lg:pl-32 md:top-20 flex justify-between z-30 w-full">
-		<div class="w-1/3 p-8 lg:p-16 md:pl-16 hidden md:block">
-			<h1 class="text-4xl lg:text-8xl mb-24" style="transform: translateY({scrollY * 0.04}px);">
+<section class="h-auto relative bg-teal-300 max-w-full w-full p-8 z-20" id="Glamping">
+	<div class="sticky top-0 md:p-8 lg:pl-32 flex justify-between z-30 w-full bg-teal-300">
+		<div class="w-full pt-4 md:pl-16 hidden md:block">
+			<h1 class="text-8xl">
 				Glamping
 			</h1>
 		</div>
 		<div
 			class="sticky top-0 flex justify-center items-center z-40 w-full bg-teal-300 h-36 md:hidden"
 		>
-			<h1 class="text-6xl md:text-8xl opacity-90">Glamping</h1>
+			<h1 class="text-6xl mt-8 opacity-90">Glamping</h1>
 		</div>
 	</div>
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 h-full ">
+		<!-- Left side: Images -->
 
-	<!-- <div class="space-y-12 w-1/2 absolute right-10 z-10 hidden md:block">
-		{#each amenities as { title, items, offset }, i}
-			<AmenityCard {title} {items} {offset} index={i} {scrollY} />
-		{/each}
+		<div class="flex flex-col justify-center h-full gap-4">
+			<div class="grid grid-cols-2 gap-4">
+				<enhanced:img
+					src="/static/camp1.webp"
+					alt="Glamping view 1"
+					class="w-full h-64 object-cover rounded-md"
+				/>
+				<enhanced:img
+					src="/static/camp2.webp"
+					alt="Glamping view 2"
+					class="w-full h-64 object-cover rounded-md"
+				/>
+			</div>
+			<enhanced:img
+				src="/static/yurt.jpeg"
+				alt="Glamping view 3"
+				class="w-full h-96 object-cover object-top rounded-md"
+			/>
+		</div>
+
+		<!-- Right side: Amenities -->
+		<div class="flex flex-col items-center space-y-8 my-12">
+			{#each amenities as amenity}
+				<div class="space-y-4">
+					<h2 class="text-2xl font-bold">{amenity.title}</h2>
+					<ul class="list-disc pl-4 space-y-2">
+						{#each amenity.items as item}
+							<li class="text-lg pl-4 list-none">{item}</li>
+						{/each}
+					</ul>
+				</div>
+			{/each}
+		</div>
 	</div>
-    <div class="space-y-12 w-full px-4 z-10 md:hidden block h-auto">
-		{#each amenities as { title, items, offset }, i}
-			<AmenityCardMobile {title} {items} {offset} index={i} {scrollY} />
-		{/each}
-	</div> -->
 </section>

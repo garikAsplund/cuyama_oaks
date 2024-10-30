@@ -12,9 +12,9 @@
 
 <nav
 	class="fixed top-0 w-full md:flex justify-between items-center hidden backdrop-blur-md z-40"
-	style="--nav-color: rgb({colorValue}, {colorValue}, {colorValue});"
+	style="--nav-color: rgb({colorValue}, {colorValue}, {colorValue}, 0.87);"
 >
-	<div class="mx-8 flex items-center space-x-4 opacity-80 nav-items">
+	<div class="mx-8 flex items-center space-x-4 nav-items">
 		<a href="#top" class="flex items-center hover:opacity-75 nav-items">
 			<LogoSvg />
 		</a>
@@ -25,7 +25,7 @@
 	</div>
 	<div class="flex justify-between items-center nav-items">
 		{#if !isVisible}
-			<div class="px-4" transition:fade={{ duration: 1000 }}>
+			<div class="px-4" in:fade={{ duration: 1000 }}>
 				<BookNowNavButton />
 			</div>
 		{/if}

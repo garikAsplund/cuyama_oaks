@@ -1,17 +1,23 @@
-export const explore: Array<{ name: string; description: string; link: string }> = [
+export const activities: { title: string, description: string, background: string, link: string, image: string }[] = [
     {
-        name: 'Cuyama Buckhorn',
-        description: '',
-        link: '/ranch'
+        title: "Hiking",
+        description: "Explore the ranch on foot with our hiking trails.",
+        background: "url('hiking.jpg')",
+        link: "https://www.alltrails.com/us/california/new-cuyama",
+        image: '/static/aliso-park.png'
     },
     {
-        name: 'Pink Pony Yurt 2',
-        description: '',
-        link: '/wildlife'
+        title: "Hiking",
+        description: "Explore the ranch on foot with our hiking trails.",
+        background: "url('hiking.jpg')",
+        link: "https://www.alltrails.com/us/california/new-cuyama",
+        image: '/static/carrizo-plain.png'
     },
     {
-        name: 'HOT TO GO!',
-        description: '',
-        link: '/history'
+        title: "Hiking",
+        description: "Explore the ranch on foot with our hiking trails.",
+        background: "url('hiking.jpg')",
+        link: "https://www.alltrails.com/us/california/new-cuyama",
+        image: '/static/ballinger-canyon.png'
     },
 ];

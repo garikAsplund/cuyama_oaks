@@ -2,7 +2,6 @@
   let { scrollY } = $props();
 
   const colorValue = $derived(Math.round(255 - (scrollY * 2)));
-
 </script>
 
 <footer

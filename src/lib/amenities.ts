@@ -2,15 +2,16 @@ export const amenities = [
     {
         title: "Sleep Comfortably",
         items: [
-            "Two memory-foam Q mattresses",
-            "Hot showers (soap provided)"
+            "Queen mattresses",
+            "Hot showers",
+            "Cold soaks",
         ],
         offset: 0
     },
     {
-        title: "Cook and Dine",
+        title: "Wine and Dine",
         items: [
-            "Gas grills with propane",
+            "Gas grills",
             "Mini fridge",
             "Cooler",
             "Utensils and plates"
@@ -22,7 +23,7 @@ export const amenities = [
         items: [
             "Hammock",
             "Fire-pit",
-            "S’mores supplies"
+            "S’more supplies",
         ],
         offset: 0
     },
@@ -30,14 +31,16 @@ export const amenities = [
         title: "Stay Energized",
         items: [
             "Coffee bar",
-            "1000 W battery pack with solar panels"
+            "1000 W battery pack",
+            "Solar lights"
         ],
         offset: 0
     },
     {
         title: "Fun and Games",
         items: [
-            "Selection of games to enjoy"
+            "Cornhole",
+            "Board games",
         ],
         offset: 0
     }

@@ -41,11 +41,8 @@
 
 <svelte:window bind:scrollY />
 
-<!-- Remove overflow-x-hidden from root -->
 <div class="relative z-0 flex flex-col min-h-screen w-full max-w-screen">
-	<!-- Add a wrapper div with overflow-x-hidden around content that needs containment -->
 	<div class="overflow-x-hidden">
-		<!-- Fullscreen background image -->
 		<div class="relative h-auto">
 			<div class="relative h-screen">
 				<enhanced:img
@@ -70,35 +67,28 @@
 			</div>
 		</div>
 
-		<!-- About -->
 		<About {scrollY} />
 	</div>
 
 	<main class="relative flex-1 w-full max-w-screen">
-		<!-- Glamping -->
 		<Glamping {scrollY} />
 
-		<!-- Goats -->
 		<enhanced:img
 			src="/static/parallax_4.jpeg"
 			alt="Cuyama Oaks Ranch"
 			class="sticky h-screen object-cover bg-cover bg-center flex justify-center items-center z-10 max-w-full"
 		/>
 
-		<!-- Camping -->
 		<Camping />
 
-		<!-- Fun -->
 		<enhanced:img
 			src="/static/parallax_2.jpeg"
 			alt="Cuyama Oaks Ranch"
 			class="w-full object-cover sticky h-[66vh] bg-cover bg-center flex justify-center items-center z-10 max-w-full"
 		/>
 
-		<!-- Things To Do -->
 		<Explore />
 
-		<!-- Welcome -->
 		<section
 			class="sticky h-screen bg-center flex justify-center items-center z-10 saturate-[55%] max-w-full"
 		>
@@ -115,30 +105,6 @@
 
 	<div class="overflow-x-hidden">
 		<Footer {scrollY}/>
-		<MobileFooter />
+		<MobileFooter {scrollY} />
 	</div>
 </div>
-
-<style>
-	.animate-on-scroll {
-		opacity: 0;
-		filter: blur(5px);
-		transform: translateY(20px);
-		transition: all 1s ease-out;
-	}
-
-	.animate-on-scroll.show {
-		opacity: 1;
-		filter: blur(0);
-		transform: translateY(0);
-	}
-
-	@media (prefers-reduced-motion: reduce) {
-		.animate-on-scroll {
-			transition: none;
-			opacity: 1;
-			filter: none;
-			transform: none;
-		}
-	}
-</style>
