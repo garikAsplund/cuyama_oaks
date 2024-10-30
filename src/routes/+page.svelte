@@ -15,60 +15,71 @@
 	let scrollY = $state(0);
 
 	let isVisible = $state(true);
-    let cardElement: HTMLElement;
+	let cardElement: HTMLElement;
 
-    onMount(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    isVisible = true;
-                    // observer.unobserve(entry.target); // Stop observing once visible
-                } else {
-					isVisible = false;
-				}
-            });
-        }, {
-            threshold: 0,
-            rootMargin: ''
-        });
+	onMount(() => {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						isVisible = true;
+						// observer.unobserve(entry.target); // Stop observing once visible
+					} else {
+						isVisible = false;
+					}
+				});
+			},
+			{
+				threshold: 0,
+				rootMargin: ''
+			}
+		);
 
-        observer.observe(cardElement);
+		observer.observe(cardElement);
 
-        return () => observer.disconnect();
-    });
+		return () => observer.disconnect();
+	});
 </script>
 
 <svelte:window bind:scrollY />
 
 <div class="relative z-0 flex flex-col min-h-screen w-full max-w-screen">
-	<div class="overflow-x-hidden">
-		<div class="relative h-auto">
-			<div class="relative h-screen">
-				<enhanced:img
-					src="/static/cuyama_oaks_bg.jpeg"
-					alt="Cuyama Oaks Ranch"
-					class="w-full h-full object-cover"
-				/>
-				<div class="absolute inset-0 bg-black bg-opacity-30"></div>
-				<Nav {scrollY} {isVisible}/>
-				<header class="absolute inset-0 flex flex-col justify-center items-center text-center" bind:this={cardElement}>
-					<div class="container mx-auto" style="transform: translateY(calc({scrollY * -1.05}px))">
-						<h1 class="text-4xl md:text-8xl md:font-bold text-white font-bona transition-all">
-							Cuyama Oaks Ranch
-						</h1>
-						<BookNowButton />
-					</div>
-				</header>
+	<section id="top">
+		<div class="overflow-x-hidden">
+			<div class="relative h-auto">
+				<div class="relative h-screen">
+					<enhanced:img
+						src="/static/cuyama_oaks_bg.jpeg"
+						alt="Cuyama Oaks Ranch"
+						class="w-full h-full object-cover"
+					/>
+					<div class="absolute inset-0 bg-black bg-opacity-30"></div>
+					<Nav {scrollY} {isVisible} />
+					<header
+						class="absolute inset-0 flex flex-col justify-center items-center text-center"
+						bind:this={cardElement}
+					>
+						<div class="container mx-auto" style="transform: translateY(calc({scrollY * -1.05}px))">
+							<h1 class="text-4xl md:text-8xl md:font-bold text-white font-bona transition-all">
+								Cuyama Oaks Ranch
+							</h1>
+							<BookNowButton />
+						</div>
+					</header>
+				</div>
+
+				<div
+					class="container mx-auto z-70"
+					style="transform: translateY(calc({scrollY * -1.45}px))"
+				>
+					<Reviews />
+				</div>
 			</div>
 
-			<div class="container mx-auto z-70" style="transform: translateY(calc({scrollY * -1.45}px))">
-				<Reviews />
-			</div>
+			<About {scrollY} />
 		</div>
-
-		<About {scrollY} />
-	</div>
-
+	</section>
+	
 	<main class="relative flex-1 w-full max-w-screen">
 		<Glamping {scrollY} />
 
@@ -103,7 +114,7 @@
 	</main>
 
 	<div class="overflow-x-hidden">
-		<Footer {scrollY}/>
+		<Footer {scrollY} />
 		<MobileFooter {scrollY} />
 	</div>
 </div>
