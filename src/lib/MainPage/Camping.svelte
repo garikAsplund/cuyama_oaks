@@ -11,7 +11,7 @@
 		<h1 class="text-6xl md:text-8xl opacity-90">Camping</h1>
 	</div>
 
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 h-full mx-auto md:my-24">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 h-full mx-auto xl:w-4/5 md:my-24">
 		<!-- Image Section -->
 		<div class="flex flex-col justify-center h-full gap-4 order-1 md:order-2">
 			<div class="grid grid-cols-2 gap-4">
