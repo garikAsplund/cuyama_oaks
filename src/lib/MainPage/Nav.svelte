@@ -21,9 +21,9 @@
 				}
             });
         }, {
-            threshold: 0.8,
-            rootMargin: '200px'
-        });
+            threshold: 0.4,
+        	rootMargin: '44px'
+			});
 
 		document.querySelectorAll('section').forEach((section) => {
 			observer.observe(section);
@@ -38,13 +38,33 @@
 	style="--nav-color: rgb({colorValue}, {colorValue}, {colorValue}, 0.87);"
 >
 	<div class="mx-8 flex items-center space-x-4 nav-items">
-		<a href="#top" class="flex items-center hover:opacity-75 nav-items" aria-label="Back to the top of the page">
+		<a
+			href="#top"
+			class="flex items-center hover:opacity-75 nav-items"
+			aria-label="Back to the top of the page"
+		>
 			<LogoSvg />
 		</a>
-		<a href="#About" class="p-2 hover:opacity-75 {activeSection === 'About' ? 'border-black border-b' : ''}" aria-label="About us">About</a>
-		<a href="#Glamping" class="p-2 hover:opacity-75 {activeSection === 'Glamping' ? 'border-black border-b' : ''}" aria-label="Glamping">Glamping</a>
-		<a href="#Camping" class="p-2 hover:opacity-75 {activeSection === 'Camping' ? 'border-black border-b' : ''}" aria-label="Camping">Camping</a>
-		<a href="#Explore" class="p-2 hover:opacity-75 {activeSection === 'Explore' ? 'border-black border-b' : ''}" aria-label="Explore">Explore</a>
+		<a
+			href="#About"
+			class="p-2 hover:opacity-75 {activeSection == 'About' ? 'border-black border-b' : ''}"
+			aria-label="About">About</a
+		>
+		<a
+			href="#Glamping"
+			class="p-2 hover:opacity-75 {activeSection === 'Glamping' ? 'border-black border-b' : ''}"
+			aria-label="Glamping">Glamping</a
+		>
+		<a
+			href="#Camping"
+			class="p-2 hover:opacity-75 {activeSection === 'Camping' ? 'border-black border-b' : ''}"
+			aria-label="Camping">Camping</a
+		>
+		<a
+			href="#Explore"
+			class="p-2 hover:opacity-75 {activeSection === 'Explore' ? 'border-black border-b' : ''}"
+			aria-label="Explore">Explore</a
+		>
 	</div>
 	<div class="flex justify-between items-center nav-items">
 		{#if !isVisible}
