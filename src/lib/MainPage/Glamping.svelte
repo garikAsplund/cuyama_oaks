@@ -18,7 +18,7 @@
 			<h1 class="text-6xl mt-8 opacity-90">Glamping</h1>
 		</div>
 	</div>
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 h-full mt-16 ">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 h-full mt-16">
 		<!-- Left side: Images -->
 
 		<div class="flex flex-col justify-center h-full gap-4">
@@ -37,7 +37,7 @@
 			<enhanced:img
 				src="/static/yurt.jpeg"
 				alt="Glamping view 3"
-				class="w-full h-96 object-cover object-top rounded-md"
+				class="w-full h-96 object-cover rounded-md"
 			/>
 		</div>
 
