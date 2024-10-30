@@ -5,7 +5,7 @@
 
 <section class="h-auto relative bg-teal-300 max-w-full w-full p-8 z-20" id="Glamping">
 	<div class="sticky top-0 md:p-8 lg:pl-32 flex justify-between z-30 w-full bg-teal-300">
-		<div class="w-full pt-4 md:pl-16 hidden md:block">
+		<div class="w-full pt-12 md:pl-16 hidden md:block">
 			<h1 class="text-8xl">
 				Glamping
 			</h1>
