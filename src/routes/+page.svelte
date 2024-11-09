@@ -18,6 +18,7 @@
 	let cardElement: HTMLElement;
 
 	onMount(() => {
+
 		const observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
@@ -110,10 +111,10 @@
 			<ToTopButton class="relative z-10" />
 		</section>
 
-		<div class="sticky h-14 bg-orange-400 flex justify-center items-center text-white w-full"></div>
+		<div class="sticky h-36 bg-orange-400 flex justify-center items-center text-white w-full"></div>
 	</main>
 
-	<div class="overflow-x-hidden">
+	<div class="overflow-x-hidden" id="footer">
 		<Footer {scrollY} />
 		<MobileFooter {scrollY} />
 	</div>

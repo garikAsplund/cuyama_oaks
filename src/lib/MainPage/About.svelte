@@ -2,8 +2,8 @@
     let { scrollY } = $props();
 </script>
 
-<section class="scroll-mt-24 z-30 bg-white relative" id="About">
-    <div class="overflow-hidden">
+<section class="scroll-mt-24 z-30 bg-white relative " id="About">
+    <div class="overflow-hidden ">
         <section class="relative w-full flex justify-center z-30 h-[66vh]">
             <div
                 class="md:absolute top-20 right-[5%] w-1/2 h-full z-30 hidden md:block"

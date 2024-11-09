@@ -3,7 +3,9 @@
 	import { amenities } from '$lib/amenities';
 </script>
 
-<section class="h-auto relative bg-teal-300 max-w-full w-full p-8 z-20" id="Glamping">
+<section class="h-auto relative bg-teal-300 max-w-full w-full p-8 z-20 flex flex-col items-center" id="Glamping">
+	<div class="max-w-7xl ">
+
 	<div class="sticky top-0 md:p-8 lg:pl-32 flex justify-between z-30 w-full bg-teal-300">
 		<div class="w-full pt-12 md:pl-16 hidden md:block">
 			<h1 class="text-8xl">
@@ -40,7 +42,7 @@
 		</div>
 
 		<!-- Right side: Amenities -->
-		<div class="flex flex-col items-center md:-translate-x-16 space-y-8 my-12">
+		<div class="flex flex-col items-center space-y-8 my-12">
 			{#each amenities as amenity}
 				<div class="space-y-4">
 					<h2 class="text-2xl font-bold">{amenity.title}</h2>
@@ -52,5 +54,6 @@
 				</div>
 			{/each}
 		</div>
+	</div>
 	</div>
 </section>

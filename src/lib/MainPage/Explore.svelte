@@ -26,12 +26,14 @@
 	];
 </script>
 
-<section class="min-h-screen relative h-auto bg-blue-300 p-8 z-30" id="Explore">
+<section class="min-h-screen relative h-auto bg-blue-300 p-8 z-30 flex flex-col items-center" id="Explore">
+	<div class="max-w-7xl">
+
 	<h2 class="sticky top-0 pt-12 md:pt-24 font-bona md:text-8xl text-6xl text-center w-full bg-blue-300 z-30">
 		Explore
 	</h2>
 	<div class="container flex flex-col items-center mx-auto mt-24">
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:w-5/6 lg:w-2/3 w-2/3">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:w-5/6 lg:w-4/5 w-2/3">
 			{#each activities as activity}
 				<div class=" p-8">
 					<a
@@ -69,5 +71,6 @@
 				Check out our guidebook!
 			</a>
 		</div>
+	</div>
 	</div>
 </section>
