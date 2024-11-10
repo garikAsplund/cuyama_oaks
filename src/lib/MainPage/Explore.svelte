@@ -2,6 +2,7 @@
 	import alisopark from '/static/aliso-park.png?enhanced';
 	import carrizoplain from '/static/carrizo-plain.png?enhanced';
 	import ballingercanyon from '/static/ballinger-canyon.png?enhanced';
+	import LATimes from '$lib/SVGs/LATimes.svelte';
 
 	const activities: {
 		title: string;
@@ -60,6 +61,16 @@
 				class="text-3xl font-bold text-center text-opacity-80 hover:opacity-75 p-2"
                 aria-label="Visit Cuyama Directory"
 				><enhanced:img src="/static/visit-cuyama.png" alt="Visit Cuyama town directory" class="invert cent md:h-24 h-16 w-auto" /> <p class="md:mt-8 mt-4 md:text-3xl text-lg">TOWN DIRECTORY</p>
+                </a
+			>
+			<a
+                href="https://www.latimes.com/travel/list/things-to-do-cuyama-valley-history-wildflowers"
+				target="_blank"
+				rel="noopenner noreferrer"
+				class="text-3xl font-bold text-center text-opacity-80 hover:opacity-75 p-2"
+                aria-label="LA Times Travel article on Cuyama Valley"
+				>
+				<LATimes />
                 </a
 			>
 			<a
