@@ -18,7 +18,6 @@
 	let cardElement: HTMLElement;
 
 	onMount(() => {
-
 		const observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
@@ -61,9 +60,13 @@
 						bind:this={cardElement}
 					>
 						<div class="container mx-auto" style="transform: translateY(calc({scrollY * -1.05}px))">
-							<h1 class="text-4xl md:text-8xl md:font-bold text-white font-bona transition-all">
+							<h1 class="text-4xl sm:text-6xl md:text-8xl md:font-bold text-white font-bona transition-all">
 								Cuyama Oaks Ranch
 							</h1>
+							<h2 class="text-base md:text-xl text-gray-200 py-8">
+								Glamping and camping in<br class="md:hidden"/>
+								The Hidden Valley of Enchantment
+							</h2>
 							<BookNowButton />
 						</div>
 					</header>
@@ -80,7 +83,7 @@
 			<About {scrollY} />
 		</div>
 	</section>
-	
+
 	<main class="relative flex-1 w-full max-w-screen">
 		<Glamping {scrollY} />
 
@@ -111,7 +114,7 @@
 			<ToTopButton class="relative z-10" />
 		</section>
 
-		<div class="sticky h-36 bg-orange-400 flex justify-center items-center text-white w-full"></div>
+		<div class="sticky h-16 bg-orange-400 flex justify-center items-center text-white w-full"></div>
 	</main>
 
 	<div class="overflow-x-hidden" id="footer">

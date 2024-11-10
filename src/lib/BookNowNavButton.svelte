@@ -7,7 +7,7 @@
 	rel="noopener"
 	class="px-4 flex items-center space-x-3 text-xl text-white py-2  border-2 border-black"
 >
-	<div class="flex hover:opacity-75 items-center space-x-3">
+	<div class="flex hover:opacity-75 items-center space-x-3 whitespace-nowrap">
 		<p>Book Now</p>
 	</div>
 </a>

@@ -17,5 +17,5 @@
 			><p>1900 Wasioja Rd, New Cuyama, CA</p></a
 		>
 	</div>
-	<a href="https://garik.codes" class="hover:opacity-80 pb-4">GAR1K.C0DES</a>
+	<!-- <a href="https://garik.codes" class="hover:opacity-80 pb-4">GAR1K.C0DES</a> -->
 </footer>
