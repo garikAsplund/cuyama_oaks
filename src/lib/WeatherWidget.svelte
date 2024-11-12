@@ -1,15 +1,5 @@
 <script lang="ts">
-	type WeatherData = {
-		temp: number;
-		icon: string;
-		loading: boolean;
-	};
-
-	let weather = $state<WeatherData>({
-		temp: 0,
-		icon: 'sunny',
-		loading: true
-	});
+	import { page } from '$app/stores';
 
 	const weatherEmojis = {
 		'01d': '☀️', // clear sky day
@@ -31,35 +21,6 @@
 		'50d': '🌁', // misty day
 		'50n': '🌁' // misty night
 	};
-
-	const LATITUDE = '34.94';
-	const LONGITUDE = '-119.80';
-	const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
-
-	$effect(() => {
-		const fetchWeather = async () => {
-			try {
-				const response = await fetch(
-					`https://api.openweathermap.org/data/2.5/weather?lat=${LATITUDE}&lon=${LONGITUDE}&appid=${API_KEY}&units=imperial`
-				);
-				const data = await response.json();
-
-				weather = {
-					temp: Math.round(data.main.temp),
-					icon: data.weather[0].icon,
-					loading: false
-				};
-			} catch (error) {
-				console.error('Failed to fetch weather:', error);
-				weather = {
-					...weather,
-					loading: true
-				};
-			}
-		};
-
-		fetchWeather();
-	});
 </script>
 
 <a
@@ -69,9 +30,9 @@
 	class="hover:opacity-75"
 >
 	<div class="flex items-center gap-2 p-2">
-		{#if weather.loading === false}
-			<span class="text-2xl">{weatherEmojis[weather.icon]}</span>
-			<span class="text-white opacity-80">{weather.temp}°</span>
+		{#if $page.data.weather}
+			<span class="text-2xl">{weatherEmojis[$page.data.weather.icon]}</span>
+			<span class="text-white opacity-80">{$page.data.weather.temp}°</span>
 		{/if}
 	</div></a
 >
