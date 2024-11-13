@@ -76,8 +76,8 @@
 				</div>
 
 				<div
-					class="container mx-auto z-70"
-					style="transform: translateY(calc({scrollY * -1.45}px))"
+					class="container mx-auto z-10 absolute inset-x-0 w-full"
+					style="transform: translateY(calc({scrollY * -1.35}px))"
 				>
 					<Reviews />
 				</div>
