@@ -22,6 +22,7 @@
 				class="relative z-20 w-full bg-white/75 h-[105vh] pt-64 md:pt-0 flex flex-col justify-center items-start p-8 pl-8 md:pl-16 lg:pl-32 xl:pl-48 mx-auto space-y-4"
 				style="transform: translateY(calc({scrollY} * -0.16px));"
 			>
+				<div class="max-w-4xl space-y-4">
 					<h1 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 w-full">Your hosts</h1>
 					<p class="w-5/6 pl-4 md:pl-8 text-xl">
 						We met in Ventura and love seeking new adventures.
@@ -41,9 +42,10 @@
 						Mountains.
 					</p>
 					<p class="w-5/6 pl-4 md:pl-8 text-xl">
-						Offering 360-degree views and close to hiking, wine country, and the beach, it provides
-						a private, secluded high-desert getaway just off Highway 166.
+						Offering 360-degree views and close to <b>hiking, wine country, and the beach</b>, it provides
+						a private, secluded high desert getaway just off Route 166.
 					</p>
+				</div>
 			</div>
 		</section>
 	</div>

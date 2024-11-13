@@ -5,7 +5,7 @@
 </script>
 
 <footer
-	class="fixed bottom-0 w-full md:flex flex-col justify-center items-center text-white opacity-70  hidden z-0 space-y-4 "
+	class="fixed bottom-0 w-full md:flex flex-col justify-center items-center text-white opacity-70  hidden z-0 space-y-4 mb-8"
 	style=" color: rgb({colorValue}, {colorValue}, {colorValue});"
 >
 	<div class="flex text-center p-4 space-x-4">

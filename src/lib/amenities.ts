@@ -2,7 +2,7 @@ export const amenities = [
     {
         title: "Sleep Comfortably",
         items: [
-            "Queen mattresses",
+            "Queen or king mattresses",
             "Hot showers",
             "Cold soaks",
         ],

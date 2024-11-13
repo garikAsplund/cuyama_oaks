@@ -119,7 +119,7 @@
 			<ToTopButton class="relative z-10" />
 		</section>
 
-		<div class="sticky h-16 bg-orange-400 flex justify-center items-center text-white w-full"></div>
+		<div class="sticky h-32 bg-orange-400 flex justify-center items-center text-white w-full"></div>
 	</main>
 
 	<div class="overflow-x-hidden" id="footer">

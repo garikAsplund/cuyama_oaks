@@ -49,6 +49,7 @@
 				{#each campsites as amenity}
 					<div class="space-y-4">
 						<h2 class="text-2xl font-bold">{amenity.name}</h2>
+						<h3 class="text-lg font-semibold pl-4">{amenity.tag}</h3>
 						<p class="text-lg pl-4 list-none">{amenity.description}</p>
 					</div>
 				{/each}
