@@ -58,7 +58,15 @@
 					</div>
 				{/each}
 			</div>
-			<div class="flex flex-col justify-center items-center my-24 space-y-24">
+			<div class="flex flex-col justify-center items-center mt-12 mb-12 md:space-y-24 space-y-8">
+					<div class="w-[100vw] h-48 overflow-hidden relative md:hidden">
+					<enhanced:img
+						src="/static/flowers.webp"
+						class="w-[100vw] object-cover absolute top-1/2 -translate-y-1/2"
+						alt="Springtime flowers"
+						style="transform: translateY(-50%) translateZ(0)"
+					/>
+				</div>
 				<a
 					href="https://www.visitcuyama.com/directory#directory-categories"
 					target="_blank"
@@ -72,6 +80,7 @@
 					/>
 					<p class="md:mt-8 mt-4 md:text-3xl text-lg">TOWN DIRECTORY</p>
 				</a>
+			
 				<a
 					href="https://www.latimes.com/travel/list/things-to-do-cuyama-valley-history-wildflowers"
 					target="_blank"
