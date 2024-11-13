@@ -23,29 +23,29 @@
 				<div class="grid grid-cols-2 gap-4">
 					<enhanced:img
 						src="/static/camp3.webp"
-						alt="Glamping view 1"
+						alt="Camp as homebase"
 						class="w-full h-64 object-cover rounded-md"
 					/>
 					<enhanced:img
 						src="/static/COR-social-card.jpeg"
-						alt="Glamping view 2"
+						alt="Camp at the base of the mountains"
 						class="w-full h-64 object-cover rounded-md"
 					/>
 				</div>
 				<enhanced:img
 					src="/static/camp4.webp"
-					alt="Glamping view 3"
+					alt="Campsite overview"
 					class="w-full h-96 object-cover object-top rounded-md"
 				/>
 				<enhanced:img
 					src="/static/poop-review.png"
-					alt="Glamping view 3"
+					alt="Poop review"
 					class="w-full h-auto object-contain object-top rounded-md"
 				/>
 			</div>
 
 			<!-- Description Section -->
-			<div class="flex flex-col items-start space-y-8 order-2 md:order-1 my-12 md:my-24">
+			<div class="flex flex-col items-start space-y-16 order-2 md:order-1 my-12 md:my-24">
 				{#each campsites as amenity}
 					<div class="space-y-4">
 						<h2 class="text-2xl font-bold">{amenity.name}</h2>

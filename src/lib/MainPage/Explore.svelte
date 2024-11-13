@@ -32,8 +32,7 @@
 	id="Explore"
 >
 	<div class="max-w-7xl">
-		
-				<h2
+		<h2
 			class="sticky top-0 pt-12 md:pt-24 font-bona md:text-8xl text-6xl text-center w-full bg-blue-300 z-30"
 		>
 			Explore
@@ -59,7 +58,7 @@
 				{/each}
 			</div>
 			<div class="flex flex-col justify-center items-center mt-12 mb-12 md:space-y-24 space-y-8">
-					<div class="w-[100vw] h-48 overflow-hidden relative md:hidden">
+				<div class="w-[100vw] h-48 overflow-hidden relative md:hidden">
 					<enhanced:img
 						src="/static/flowers.webp"
 						class="w-[100vw] object-cover absolute top-1/2 -translate-y-1/2"
@@ -80,7 +79,7 @@
 					/>
 					<p class="md:mt-8 mt-4 md:text-3xl text-lg">TOWN DIRECTORY</p>
 				</a>
-			
+
 				<a
 					href="https://www.latimes.com/travel/list/things-to-do-cuyama-valley-history-wildflowers"
 					target="_blank"
@@ -89,6 +88,7 @@
 					aria-label="LA Times Travel article on Cuyama Valley"
 				>
 					<LATimes />
+					<p class=" md:text-3xl text-lg">TRAVEL</p>
 				</a>
 				<a
 					href="https://www.airbnb.com/s/guidebooks?refinement_paths%5B%5D=%2Fguidebooks%2F2940554&s=67&unique_share_id=8aacc671-d50a-4cb4-93e1-8f53d40a6145"
@@ -98,7 +98,6 @@
 				>
 					Check out our guidebook!
 				</a>
-				
 			</div>
 		</div>
 	</div>
