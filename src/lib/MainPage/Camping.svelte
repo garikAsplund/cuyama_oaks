@@ -37,6 +37,11 @@
 					alt="Glamping view 3"
 					class="w-full h-96 object-cover object-top rounded-md"
 				/>
+				<enhanced:img
+					src="/static/poop-review.png"
+					alt="Glamping view 3"
+					class="w-full h-auto object-contain object-top rounded-md"
+				/>
 			</div>
 
 			<!-- Description Section -->

@@ -22,7 +22,7 @@ export const amenities = [
         title: "Relax and Unwind",
         items: [
             "Hammock",
-            "Fire-pit",
+            "Fire pit",
             "S’more supplies",
         ],
         offset: 0

@@ -11,6 +11,7 @@
 	import Glamping from '$lib/MainPage/Glamping.svelte';
 	import Camping from '$lib/MainPage/Camping.svelte';
 	import { onMount } from 'svelte';
+	import PhotoReel from '$lib/MainPage/PhotoReel.svelte';
 
 	let scrollY = $state(0);
 
@@ -60,11 +61,13 @@
 						bind:this={cardElement}
 					>
 						<div class="container mx-auto" style="transform: translateY(calc({scrollY * -1.05}px))">
-							<h1 class="text-4xl sm:text-6xl md:text-8xl md:font-bold text-white font-bona transition-all">
+							<h1
+								class="text-4xl sm:text-6xl md:text-8xl md:font-bold text-white font-bona transition-all"
+							>
 								Cuyama Oaks Ranch
 							</h1>
 							<h2 class="text-base md:text-xl text-gray-200 py-8">
-								Glamping and camping in<br class="md:hidden"/>
+								Glamping and camping in<br class="md:hidden" />
 								The Hidden Valley of Enchantment
 							</h2>
 							<BookNowButton />
@@ -85,6 +88,8 @@
 	</section>
 
 	<main class="relative flex-1 w-full max-w-screen">
+		<PhotoReel />
+
 		<Glamping {scrollY} />
 
 		<enhanced:img
