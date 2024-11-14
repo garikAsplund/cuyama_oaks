@@ -24,10 +24,10 @@
 
 			<div class="flex flex-col justify-center h-full gap-4">
 				<enhanced:img
-					src="/static/glamping-inside.jpeg"
-					alt="Glamping view 3"
-					class="w-full h-80 object-cover object-center rounded-md"
-				/>
+						src="/static/glamping-outside.jpeg"
+						alt="Glamping view 2"
+						class="w-full h-80 object-cover object-left rounded-md"
+					/>
 				<div class="grid grid-cols-2 gap-4">
 					<enhanced:img
 					src="/static/glamping.webp"
@@ -41,10 +41,10 @@
 					/>
 				</div>
 				<enhanced:img
-						src="/static/glamping-outside.jpeg"
-						alt="Glamping view 2"
-						class="w-full h-80 object-cover object-left rounded-md"
-					/>
+					src="/static/glamping-inside.jpeg"
+					alt="Glamping view 3"
+					class="w-full h-80 object-cover object-center rounded-md"
+				/>
 			</div>
 
 			<!-- Right side: Amenities -->
