@@ -58,13 +58,6 @@
 				{/each}
 			</div>
 			<div class="flex flex-col justify-center items-center mb-24 space-y-24">
-				<!-- <div class="w-[100vw] h-48 overflow-hidden">
-					<enhanced:img
-						src="/static/flowers.webp"
-						class="absolute -z-10 w-full inset-0 h-48 object-cover "
-						alt="Springtime flowers"
-					/>
-				</div> -->
 				 <div class="grid md:grid-cols-2 grid-cols-1 gap-8 items-end justify-items-center">
 				
 				<a
