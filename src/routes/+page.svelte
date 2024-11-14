@@ -12,6 +12,7 @@
 	import Camping from '$lib/MainPage/Camping.svelte';
 	import { onMount } from 'svelte';
 	import PhotoReel from '$lib/MainPage/PhotoReel.svelte';
+	import WeatherWidget from '$lib/WeatherWidget.svelte';
 
 	let scrollY = $state(0);
 
@@ -71,6 +72,9 @@
 								The Hidden Valley of Enchantment
 							</h2>
 							<BookNowButton />
+							<div class="md:hidden flex w-full justify-center mt-8">
+								<WeatherWidget />
+							</div>
 						</div>
 					</header>
 				</div>
