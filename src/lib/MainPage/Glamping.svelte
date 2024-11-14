@@ -1,6 +1,7 @@
 <!-- GlampingSection.svelte -->
 <script lang="ts">
 	import { amenities } from '$lib/amenities';
+	import { glampsites } from '$lib/glampsites';
 </script>
 
 <section
@@ -29,21 +30,21 @@
 				/>
 				<div class="grid grid-cols-2 gap-4">
 					<enhanced:img
+					src="/static/glamping.webp"
+					alt="Glamping view 3"
+					class=" w-full h-96 object-cover object-top rounded-md"
+				/>
+					<enhanced:img
+						src="/static/glamping-night.jpeg"
+						alt="Glamping view 1"
+						class="w-full h-96 object-cover object-bottom rounded-md"
+					/>
+				</div>
+				<enhanced:img
 						src="/static/glamping-outside.jpeg"
 						alt="Glamping view 2"
 						class="w-full h-80 object-cover object-left rounded-md"
 					/>
-					<enhanced:img
-						src="/static/glamping-night.jpeg"
-						alt="Glamping view 1"
-						class="w-full h-80 object-cover object-bottom rounded-md"
-					/>
-				</div>
-				<enhanced:img
-					src="/static/glamping-bed.png"
-					alt="Glamping view 3"
-					class=" w-full h-96 object-cover object-top rounded-md"
-				/>
 			</div>
 
 			<!-- Right side: Amenities -->
@@ -61,6 +62,28 @@
 					{/each}
 				</div>
 			</div>
+		</div>
+		<div class="grid md:grid-cols-3 grid-cols-1 gap-8 my-16">
+			{#each glampsites as glampsite}
+					<div>
+						<!-- <h2 class="text-2xl font-bold">{glampsite.name}</h2> -->
+						<div class="pl-4">
+							<!-- <h3 class="text-lg font-semibold pt-4">{amenity.tag}</h3> -->
+							<!-- <p class="text-lg list-none pt-2">{glampsite.description}</p> -->
+							<div class="flex w-full justify-center">
+								<a
+									href={glampsite.link}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="text-lg p-2 border-2 mt-8 border-black hover:opacity-75"
+									aria-label="Book {glampsite.name} now!"
+								>
+									Book {glampsite.name}</a
+								>
+							</div>
+						</div>
+					</div>
+				{/each}
 		</div>
 	</div>
 </section>

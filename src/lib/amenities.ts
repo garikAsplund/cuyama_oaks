@@ -21,7 +21,7 @@ export const amenities = [
     {
         title: "Relax and Unwind",
         items: [
-            "Hammock",
+            "Hammocks",
             "Fire pit",
             "S’more supplies",
         ],

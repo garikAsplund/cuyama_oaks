@@ -38,7 +38,7 @@
 			Explore
 		</h2>
 		<div class="container flex flex-col items-center mx-auto mt-24">
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:w-5/6 lg:w-4/5 w-2/3">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:w-5/6 mb-24 lg:w-4/5 w-2/3">
 				{#each activities as activity}
 					<div class="lg:p-8 w-1/2 md:w-full mx-auto">
 						<a
@@ -57,15 +57,16 @@
 					</div>
 				{/each}
 			</div>
-			<div class="flex flex-col justify-center items-center mt-12 mb-12 md:space-y-24 space-y-8">
-				<div class="w-[100vw] h-48 overflow-hidden relative md:hidden">
+			<div class="flex flex-col justify-center items-center mb-24 space-y-24">
+				<!-- <div class="w-[100vw] h-48 overflow-hidden">
 					<enhanced:img
 						src="/static/flowers.webp"
-						class="w-[100vw] object-cover absolute top-1/2 -translate-y-1/2"
+						class="absolute -z-10 w-full inset-0 h-48 object-cover "
 						alt="Springtime flowers"
-						style="transform: translateY(-50%) translateZ(0)"
 					/>
-				</div>
+				</div> -->
+				 <div class="grid md:grid-cols-2 grid-cols-1 gap-8 items-end justify-items-center">
+				
 				<a
 					href="https://www.visitcuyama.com/directory#directory-categories"
 					target="_blank"
@@ -75,7 +76,7 @@
 					><enhanced:img
 						src="/static/visit-cuyama.png"
 						alt="Visit Cuyama town directory"
-						class="invert cent md:h-24 h-16 w-auto"
+						class="invert md:h-24 h-16 w-auto"
 					/>
 					<p class="md:mt-8 mt-4 md:text-3xl text-lg">TOWN DIRECTORY</p>
 				</a>
@@ -90,6 +91,7 @@
 					<LATimes />
 					<p class=" md:text-3xl text-lg">TRAVEL</p>
 				</a>
+			</div>
 				<a
 					href="https://www.airbnb.com/s/guidebooks?refinement_paths%5B%5D=%2Fguidebooks%2F2940554&s=67&unique_share_id=8aacc671-d50a-4cb4-93e1-8f53d40a6145"
 					target="_blank"
