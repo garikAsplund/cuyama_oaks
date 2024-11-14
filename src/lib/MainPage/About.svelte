@@ -55,7 +55,7 @@
 					</p>
 					<h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 w-full pt-12">The ranch</h2>
 					<p class="w-5/6 pl-4 md:pl-8 text-xl">
-						Cuyama Oaks Ranch is an 82-acre property nestled at the base of the Sierra Madre
+						Located 2.5 hours from Los Angeles, Cuyama Oaks Ranch is an 82-acre property nestled at the base of the Sierra Madre
 						Mountains.
 					</p>
 					<p class="w-5/6 pl-4 md:pl-8 text-xl">
