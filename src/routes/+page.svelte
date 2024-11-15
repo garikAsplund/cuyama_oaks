@@ -53,6 +53,8 @@
 					<enhanced:img
 						src="/static/cuyama_oaks_bg.jpeg"
 						alt="Cuyama Oaks Ranch"
+						fetchpriority="high" 
+						loading="eager"
 						class="w-full h-full object-cover"
 					/>
 					<div class="absolute inset-0 bg-black bg-opacity-30"></div>
