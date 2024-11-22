@@ -15,12 +15,12 @@
 			</h2>
 		</div>
 		<div
-			class="sticky top-0 flex font-bona justify-center items-center z-40 w-full bg-yellow-300 h-36 md:hidden"
+			class="sticky top-0 flex font-bona justify-center items-end z-40 w-full bg-yellow-300 h-28 md:hidden"
 		>
 			<h1 class="text-6xl md:text-8xl opacity-90">Camping</h1>
 		</div>
 
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-8 h-full mx-auto xl:w-4/5 md:my-24">
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8 h-full mx-auto xl:w-4/5 md:mb-24 mt-16">
 			<!-- Image Section -->
 			<div class="flex flex-col justify-center h-full gap-4 order-1 md:order-2">
 				<enhanced:img
