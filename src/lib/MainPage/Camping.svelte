@@ -24,25 +24,25 @@
 			<!-- Image Section -->
 			<div class="flex flex-col justify-center h-full gap-4 order-1 md:order-2">
 				<enhanced:img
-					src="/static/camp8.webp"
+					src="/static/camping/camp8.webp"
 					alt="Campsite overview"
 					class="w-full h-48 object-cover object-center rounded-md"
 				/>
 				<div class="grid grid-cols-2 gap-4">
 					<enhanced:img
-						src="/static/camp5.webp"
+						src="/static/camping/camp5.webp"
 						alt="Camp as homebase"
 						class="w-full h-96 object-cover object-top rounded-md"
 					/>
 					<enhanced:img
-						src="/static/camp7.webp"
+						src="/static/camping/camp7.webp"
 						alt="Camp at the base of the mountains"
 						class="w-full h-96 object-cover object-right rounded-md"
 					/>
 				</div>
 
 				<enhanced:img
-					src="/static/poop-review.png"
+					src="/static/camping/poop-review.png"
 					alt="Poop review"
 					class="w-full h-auto object-contain object-top rounded-md"
 				/>

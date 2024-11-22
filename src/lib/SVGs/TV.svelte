@@ -14,5 +14,5 @@
 			style="fill:#ed2c2e;fill-opacity:1"
 		/>
 	</g>
-</svg
+	</svg
 >

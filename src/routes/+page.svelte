@@ -53,7 +53,7 @@
 			<div class="relative h-auto">
 				<div class="relative h-screen">
 					<enhanced:img
-						src="/static/cuyama_oaks_bg.jpeg"
+						src="/static/about/cuyama_oaks_bg.jpeg"
 						alt="Cuyama Oaks Ranch"
 						fetchpriority="high"
 						loading="eager"

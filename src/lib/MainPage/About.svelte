@@ -30,7 +30,7 @@
 			></div>
 
 			<enhanced:img
-				src="/static/nate+ricky.jpeg"
+				src="/static/about/nate+ricky.jpeg"
 				id="gay-boys"
 				alt="Your hosts Nate and Ricky"
 				class="object-contain absolute top-20 right-[5%] w-1/2 z-20"
