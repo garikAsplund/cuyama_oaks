@@ -14,16 +14,5 @@
 			style="fill:#ed2c2e;fill-opacity:1"
 		/>
 	</g>
-	<style xmlns="" class="darkreader darkreader--fallback">
-		html,
-		body,
-		body :not(iframe) {
-			background-color: #181a1b !important;
-			border-color: #776e62 !important;
-			color: #e8e6e3 !important;
-		}
-		div[style*='background-color: rgb(135, 135, 135)'] {
-			background-color: #878787 !important;
-		}
-	</style></svg
+</svg
 >
