@@ -12,7 +12,7 @@ export const glampsites: Array<{ name: string; description: string; groupSize: s
         link: 'https://www.hipcamp.com/en-US/land/california-cuyama-oaks-ranch-ex9hp87z/sites/400968?adults=1&children=0&srid=aa45c9a6-e0ea-4184-92b8-ef60564ed623'
     },
     {
-        name: 'HOT TO GO!',
+        name: 'HOT TO GO! Yurt',
         description: 'Up to 4',
         groupSize: '',
         link: 'https://www.hipcamp.com/en-US/land/california-cuyama-oaks-ranch-ex9hp87z/sites/563319?adults=1&children=0&srid=f06286d1-f881-4ed2-a9f7-68ae36402ade'

@@ -13,9 +13,8 @@
 		<span>|</span>
 		<p>(740) 258-8561</p>
 		<span>|</span>
-		<a href="https://maps.app.goo.gl/y3r2spJiP6Eptrir6" class="hover:opacity-80"
+		<a href="https://maps.app.goo.gl/y3r2spJiP6Eptrir6" target="_blank" rel="noopener noreferrer" class="hover:opacity-80"
 			><p>1900 Wasioja Rd, New Cuyama, CA</p></a
 		>
 	</div>
-	<!-- <a href="https://garik.codes" class="hover:opacity-80 pb-4">GAR1K.C0DES</a> -->
 </footer>

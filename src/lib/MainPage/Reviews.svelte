@@ -8,21 +8,21 @@
 			name: 'Google',
 			link: 'https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zLKoMDfJq8oxYLRSNaiwMEhNSrVMMUtOMTcyNTc1tDKoMDMwMDe1NEyxNDY0Tksys_ASTC6tTMxNVMhPzC5WKErMS84AAO55FUY&q=cuyama+oaks+ranch&oq=cuyama+oaks+ranch&sourceid=chrome&ie=UTF-8#lrd=0x80ebe9d6cd725751:0x6007591d9313fb68,1,,,,',
 			svg: GoogleSVG,
-			number: '30 reviews',
+			number: '31 reviews',
 			rating: '4.8'
 		},
 		{
 			name: 'Hipcamp',
 			link: 'https://www.hipcamp.com/en-US/land/california-cuyama-oaks-ranch-ex9hp87z/reviews',
 			svg: HipcampSVG,
-			number: '721 ratings',
+			number: '728 ratings',
 			rating: '99%'
 		},
 		{
 			name: 'Airbnb',
 			link: 'https://www.airbnb.com/users/show/37274212',
 			svg: AirbnbSVG,
-			number: '392 reviews',
+			number: '394 reviews',
 			rating: '4.93'
 		}
 	];
@@ -31,7 +31,7 @@
 <div class="w-full flex justify-center items-center text-white fill-white opacity-80">
 	<div class="md:w-2/3 w-full flex justify-between items-center md:scale-100 scale-75">
 		{#each reviews as review}
-			<a href={review.link} aria-label="See our {review.name} Reviews" class="hover:opacity-75">
+			<a href={review.link} aria-label="See our {review.name} Reviews" rel="noopener noreferrer" target="_blank" class="hover:opacity-75">
 				<div class="flex flex-col items-center justify-center space-y-1">
 					<div class="w-12 h-12 flex items-center justify-center">
 						<svelte:component this={review.svg}  />

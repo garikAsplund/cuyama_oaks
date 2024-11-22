@@ -6,7 +6,7 @@
 	href="https://www.hipcamp.com/en-US/land/california-cuyama-oaks-ranch-ex9hp87z?adults=1&children=0&srid=5fd3d2e1-ab6c-41b1-89c9-40b2c4fc530a"
 	target="_blank"
 	rel="noopener"
-	class="md:mt-24 mt-8 inline-flex items-center space-x-3 text-xl text-white px-4 py-2 rounded-lg border-2 animate-border-gradient backdrop-blur-sm bg-transparent"
+	class="md:mt-24 mt-8 inline-flex hover:shadow-md items-center space-x-3 text-xl text-white px-4 py-2 rounded-lg border-2 animate-border-gradient backdrop-blur-sm bg-transparent"
 	>
 	<div class="flex hover:opacity-75 items-center space-x-3">
 		<CalendarSvg />
