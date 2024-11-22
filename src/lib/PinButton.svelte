@@ -2,7 +2,7 @@
 	import MapSvg from '$lib/SVGs/MapSVG.svelte';
 	import { onMount } from 'svelte';
 
-	let directionsLink = '';
+	let directionsLink = $state('');
 
 	function detectDevice() {
 		const userAgent = navigator.userAgent;
@@ -23,7 +23,7 @@
 	href={directionsLink}
 	target="_blank"
 	rel="noopener"
-	aria-label="Get directions to our location"
+	aria-label="Our location"
 	class="p-4 hover:opacity-65 opacity-85"
 >
 	<MapSvg />

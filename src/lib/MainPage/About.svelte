@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import TV from '$lib/SVGs/TV.svelte';
 
 	let { scrollY } = $props();
 	let imageHeight = $state(0);
@@ -37,9 +38,9 @@
 			/>
 
 			<div
-				class="relative z-20 w-full bg-white/75 h-auto pt-64 md:pt-0 flex flex-col justify-center items-start p-8 pl-8 md:pl-16 lg:pl-32 xl:pl-48 mx-auto space-y-4"
+				class="relative z-20 w-full bg-white/75 h-auto md:pt-0 flex flex-col justify-center items-start p-8 pl-8 md:pl-16 lg:pl-32 xl:pl-48 mx-auto space-y-4"
 			>
-				<div class="max-w-4xl space-y-4">
+				<div class="max-w-4xl space-y-4 mt-48">
 					<h1 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 w-full">Your hosts</h1>
 					<p class="w-5/6 pl-4 md:pl-8 text-xl">
 						We met in Ventura and love seeking new adventures.
@@ -63,6 +64,9 @@
 						a private, secluded high desert getaway just off Route 166.
 					</p>
 				</div>
+				<a href="https://www.imdb.com/title/tt27508619/" target="_blank" rel="noopener noreferrer" aria-label="As seen on TV" class="hover:opacity-80">
+				<TV />
+				</a>
 			</div>
 		</section>
 	</div>

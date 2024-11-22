@@ -13,6 +13,8 @@
 	import { onMount } from 'svelte';
 	import PhotoReel from '$lib/MainPage/PhotoReel.svelte';
 	import WeatherWidget from '$lib/WeatherWidget.svelte';
+	import Video from '$lib/MainPage/Video.svelte';
+	import Zoo from '$lib/MainPage/Zoo.svelte';
 
 	let scrollY = $state(0);
 
@@ -53,7 +55,7 @@
 					<enhanced:img
 						src="/static/cuyama_oaks_bg.jpeg"
 						alt="Cuyama Oaks Ranch"
-						fetchpriority="high" 
+						fetchpriority="high"
 						loading="eager"
 						class="w-full h-full object-cover"
 					/>
@@ -96,29 +98,39 @@
 	<main class="relative flex-1 w-full max-w-screen">
 		<PhotoReel />
 
+		<Video />
+
 		<Glamping {scrollY} />
 
 		<enhanced:img
-			src="/static/parallax_4.jpeg"
+			src="/static/sections/baseball.jpeg"
 			alt="Cuyama Oaks Ranch"
-			class="sticky h-screen object-cover bg-cover bg-center flex justify-center items-center z-10 max-w-full"
+			class="w-full object-cover sticky h-[66vh] bg-cover bg-center flex justify-center items-center z-10 max-w-full"
 		/>
 
 		<Camping />
 
 		<enhanced:img
-			src="/static/parallax_2.jpeg"
+			src="/static/sections/nightshot.jpeg"
 			alt="Cuyama Oaks Ranch"
 			class="w-full object-cover sticky h-[66vh] bg-cover bg-center flex justify-center items-center z-10 max-w-full"
 		/>
 
 		<Explore />
 
+		<enhanced:img
+			src="/static/sections/goats.jpeg"
+			alt="Cuyama Oaks Ranch"
+			class="sticky h-screen object-cover bg-cover bg-center flex justify-center items-center z-10 max-w-full"
+		/>
+
+		<Zoo />
+
 		<section
 			class="sticky h-screen bg-center flex justify-center items-center z-10 saturate-[55%] max-w-full"
 		>
 			<enhanced:img
-				src="/static/parallax_3.jpeg"
+				src="/static/sections/welcome.jpeg"
 				alt="Welcome to Cuyama Oaks Ranch"
 				class="absolute inset-0 w-full h-full object-cover z-0"
 			/>

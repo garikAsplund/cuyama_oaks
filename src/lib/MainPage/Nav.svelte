@@ -64,6 +64,11 @@
 			class="p-2 hover:opacity-75 {activeSection === 'Explore' ? 'border-black border-b' : ''}"
 			aria-label="Explore">Explore</a
 		>
+		<a
+		href="#Zoo"
+		class="p-2 hover:opacity-75 {activeSection === 'Zoo' ? 'border-black border-b' : ''} hidden md:flex"
+		aria-label="Petting Zoo">Petting Zoo</a
+	>
 	</div>
 	<div class="px-4 justify-between items-center nav-items hidden md:flex">
 		{#if !isVisible}

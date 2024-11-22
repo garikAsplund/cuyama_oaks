@@ -1,7 +1,7 @@
 <script lang="ts">
-	import alisopark from '/static/aliso-park.png?enhanced';
-	import carrizoplain from '/static/carrizo-plain.png?enhanced';
-	import ballingercanyon from '/static/ballinger-canyon.png?enhanced';
+	import alisopark from '/static/explore/aliso-park.png?enhanced';
+	import carrizoplain from '/static/explore/carrizo-plain.png?enhanced';
+	import ballingercanyon from '/static/explore/ballinger-canyon.png?enhanced';
 	import LATimes from '$lib/SVGs/LATimes.svelte';
 
 	const activities: {
@@ -67,7 +67,7 @@
 					class="text-3xl font-bold text-center text-opacity-80 hover:opacity-75 p-2"
 					aria-label="Visit Cuyama Directory"
 					><enhanced:img
-						src="/static/visit-cuyama.png"
+						src="/static/explore/visit-cuyama.png"
 						alt="Visit Cuyama town directory"
 						class="invert md:h-24 h-16 w-auto"
 					/>
