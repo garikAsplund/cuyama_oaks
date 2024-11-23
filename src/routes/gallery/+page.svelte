@@ -101,10 +101,12 @@
 			caption: ':)'
 		}
 	];
+
+	let scrollY = 0;
+	const isVisible = true;
 </script>
 
 <div class="min-h-screen w-full bg-black flex flex-col items-center px-4 py-8">
-    <div class="w-full max-w-[1400px]">
-      <BiggerPictureGallery maxZoom={3} scale={0.95} intro="fadeup" />
-    </div>
-  </div>
+	<Nav {scrollY} {isVisible} />
+	<BiggerPictureGallery maxZoom={3} scale={0.95} intro="fadeup" />
+</div>

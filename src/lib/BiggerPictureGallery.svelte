@@ -5,7 +5,7 @@
   import { browser } from '$app/environment';
 
   export let thumbnailWidth = 'min(300px, 100%)';
-  export let gap = '16px';
+  export let gap = '8px';
   export let maxZoom = 3;
   export let scale = 0.95;
   export let intro = 'fadeup';
@@ -95,7 +95,7 @@
   }
 </script>
 
-<div class="gallery-container">
+<div class="gallery-container mt-16">
   <div 
     class="gallery-grid" 
     bind:this={galleryElement}
@@ -131,7 +131,7 @@
 <style>
   .gallery-container {
     width: 100%;
-    max-width: 100vw;
+    max-width: 80vw;
     display: flex;
     justify-content: center;
     overflow-x: hidden;

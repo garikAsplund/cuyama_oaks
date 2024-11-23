@@ -12,33 +12,38 @@
 
 	let activeSection = $state('');
 
-    onMount(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    activeSection = entry.target.id;
-				}
-            });
-        }, {
-            threshold: 0.4,
-        	rootMargin: '44px'
-			});
+	onMount(() => {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						activeSection = entry.target.id;
+					}
+				});
+			},
+			{
+				threshold: 0.4,
+				rootMargin: '44px'
+			}
+		);
 
 		document.querySelectorAll('section').forEach((section) => {
 			observer.observe(section);
 		});
 
-        return () => observer.disconnect();
-    });
+		return () => observer.disconnect();
+	});
 </script>
 
 <nav
 	class="fixed top-0 w-full md:flex md:justify-between items-center backdrop-blur-md z-40"
 	style="--nav-color: rgb({colorValue}, {colorValue}, {colorValue}, 0.87);"
 >
-	<div class="md:px-8 flex items-center md:space-x-4 w-full justify-around md:justify-start nav-items">
+	<div
+		class="md:px-8 flex items-center md:space-x-4 w-full justify-around md:justify-start nav-items"
+	>
 		<a
-			href="#top"
+			href="./#top"
 			class="flex items-center hover:opacity-75 nav-items md:scale-100 scale-75"
 			aria-label="Back to the top of the page"
 		>
@@ -65,18 +70,22 @@
 			aria-label="Explore">Explore</a
 		>
 		<a
-		href="./#Zoo"
-		class="p-2 hover:opacity-75 {activeSection === 'Zoo' ? 'border-black border-b' : ''} hidden md:flex"
-		aria-label="Petting Zoo">Petting Zoo</a
-	><a
-	href="/gallery"
-	class="p-2 hover:opacity-75 {activeSection === 'Gallery' ? 'border-black border-b' : ''} hidden md:flex"
-	aria-label="Petting Zoo">Photos</a
->
+			href="./#Zoo"
+			class="p-2 hover:opacity-75 {activeSection === 'Zoo'
+				? 'border-black border-b'
+				: ''} hidden md:flex"
+			aria-label="Petting Zoo">Petting Zoo</a
+		><a
+			href="/gallery"
+			class="p-2 hover:opacity-75 {activeSection === 'Gallery'
+				? 'border-black border-b'
+				: ''} hidden md:flex"
+			aria-label="Photos">Photos</a
+		>
 	</div>
 	<div class="px-4 justify-between items-center nav-items hidden md:flex">
 		{#if !isVisible}
-			<div class="px-4 " in:fade={{ duration: 1000 }}>
+			<div class="px-4" in:fade={{ duration: 1000 }}>
 				<BookNowNavButton />
 			</div>
 		{/if}

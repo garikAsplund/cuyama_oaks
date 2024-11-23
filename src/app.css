@@ -17,21 +17,3 @@
 	font-style: normal; /* Regular style */
 	font-display: swap;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-	html {
-		scroll-behavior: smooth;
-	}
-}
-
-@media (max-width: 767px) {
-	html {
-		scroll-behavior: auto;
-	}
-}
-
-@media (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
-}
