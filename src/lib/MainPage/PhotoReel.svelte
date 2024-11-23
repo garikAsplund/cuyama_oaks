@@ -15,7 +15,8 @@
 				alt="Dog and human at sunset"
 				class="w-full h-96 object-cover rounded-md aspect-square"
 			/>	
-		
+			<div class="w-full flex justify-center md:hidden"><a href="/gallery" aria-label="Photos" class="hover:opacity-75 underline underline-offset-4 text-center p-2">View more photos</a></div>
+
 		</div>
 	</div>
 </section>
