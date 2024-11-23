@@ -4,11 +4,11 @@
   import 'bigger-picture/css';
   import { browser } from '$app/environment';
 
+  export let thumbnailWidth = 'min(300px, 100%)';
+  export let gap = '16px';
   export let maxZoom = 3;
   export let scale = 0.95;
   export let intro = 'fadeup';
-  export let thumbnailWidth = '300px';
-  export let gap = '8px';
 
   let galleryData: any[] = [];
   let bp: any;
@@ -26,26 +26,52 @@
         target: document.body
       });
 
-      setTimeout(() => {
+      // Initialize masonry after images are loaded
+      const initMasonry = () => {
+        if (masonry) masonry.destroy();
+        
         masonry = new Masonry(galleryElement, {
           itemSelector: '.gallery-item',
-          columnWidth: '.gallery-item',
+          columnWidth: '.gallery-sizer',
           gutter: parseInt(gap),
-          fitWidth: true, // This helps with centering
-          percentPosition: true,
-          transitionDuration: 0
+          fitWidth: true,
+          percentPosition: false,
+          transitionDuration: 0,
         });
+      };
 
-        const images = galleryElement.getElementsByTagName('img');
-        Array.from(images).forEach(img => {
-          img.onload = () => masonry?.layout();
-        });
-      }, 100);
+      // Wait for images to load before initializing masonry
+      const images = galleryElement.getElementsByTagName('img');
+      let loadedImages = 0;
+      const totalImages = images.length;
+
+      function onImageLoad() {
+        loadedImages++;
+        if (loadedImages === totalImages) {
+          initMasonry();
+        }
+      }
+
+      Array.from(images).forEach(img => {
+        if (img.complete) {
+          onImageLoad();
+        } else {
+          img.onload = onImageLoad;
+        }
+      });
+
+      // Initialize masonry anyway after a timeout in case some images fail to load
+      setTimeout(initMasonry, 1000);
+
+      // Re-layout masonry on window resize
+      window.addEventListener('resize', () => {
+        if (masonry) masonry.layout();
+      });
     }
 
     return () => {
       bp?.destroy();
-      masonry?.destroy();
+      if (masonry) masonry.destroy();
     };
   });
 
@@ -67,10 +93,6 @@
       thumbnails: true,
     });
   }
-
-  function getAspectRatioPadding(width: number, height: number): string {
-    return `${(height / width) * 100}%`;
-  }
 </script>
 
 <div class="gallery-container">
@@ -79,6 +101,9 @@
     bind:this={galleryElement}
     style="--thumbnail-width: {thumbnailWidth}; --gap: {gap}"
   >
+    <!-- Element for masonry sizing -->
+    <div class="gallery-sizer"></div>
+    
     {#each galleryData as image, i}
       <div 
         class="gallery-item"
@@ -86,16 +111,16 @@
         on:keydown={(e) => e.key === 'Enter' && openGallery(i)}
         role="button"
         tabindex="0"
+        style="--aspect-ratio: {(image.height / image.width * 100)}%"
       >
-        <div 
-          class="aspect-ratio-box"
-          style="padding-bottom: {getAspectRatioPadding(image.width, image.height)}"
-        >
+        <div class="image-container">
           <img
             src={image.thumb}
             alt={image.alt || ''}
             loading="lazy"
             decoding="async"
+            width={image.width}
+            height={image.height}
           />
         </div>
       </div>
@@ -106,62 +131,75 @@
 <style>
   .gallery-container {
     width: 100%;
-    padding: 0 1rem;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
+    padding: var(--gap);
   }
 
   .gallery-grid {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--gap);
-    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+  }
+
+  /* Element for masonry sizing */
+  .gallery-sizer {
+    width: var(--thumbnail-width);
   }
 
   .gallery-item {
     width: var(--thumbnail-width);
-    margin-bottom: var(--gap);
-    cursor: pointer;
+    max-width: calc(100% - var(--gap));
     background: #191919;
     border-radius: 8px;
     overflow: hidden;
-  }
-
-  .aspect-ratio-box {
+    cursor: pointer;
     position: relative;
-    width: 100%;
-    height: 0;
+    margin-bottom: var(--gap);
   }
 
-  .aspect-ratio-box img {
+  .gallery-item::before {
+    content: "";
+    display: block;
+    padding-bottom: var(--aspect-ratio);
+  }
+
+  .image-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background: #191919;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    display: block;
   }
 
   .gallery-item:hover img {
     transform: scale(1.05);
   }
 
-  /* If native masonry is supported */
-  @supports (grid-template-rows: masonry) {
+  /* Mobile adjustments */
+  @media (max-width: 639px) {
     .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(var(--thumbnail-width), 1fr));
-      gap: var(--gap);
-      grid-template-rows: masonry;
-      max-width: 1400px; /* or whatever max-width you prefer */
-      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .gallery-sizer {
+      display: none;
     }
 
     .gallery-item {
       width: 100%;
-      margin-bottom: 0;
     }
   }
 </style>
