@@ -132,16 +132,16 @@
     class="gallery-grid" 
     bind:this={galleryElement}
     style="--thumbnail-width: {thumbnailWidth}; --gap: {gap}"
+    role="group"
+    aria-label="Image gallery"
   >
     <div class="gallery-sizer"></div>
     
     {#each galleryData as image, i}
-      <div 
+      <button 
         class="gallery-item"
         on:click={() => openGallery(i)}
-        on:keydown={(e) => e.key === 'Enter' && openGallery(i)}
-        role="button"
-        tabindex="0"
+        aria-label={`View larger version of ${image.alt || 'gallery image'}`}
         style="--aspect-ratio: {(image.height / image.width * 100)}%"
       >
         <div class="image-container">
@@ -154,7 +154,7 @@
             height={image.height}
           />
         </div>
-      </div>
+      </button>
     {/each}
   </div>
 </div>

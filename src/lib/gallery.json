@@ -21,8 +21,8 @@
     "full": "/gallery/3.webp",
     "thumb": "/gallery/thumbnails/3.webp",
     "alt": "",
-    "width": 1280,
-    "height": 1707,
+    "width": 1440,
+    "height": 1440,
     "originalName": "3.webp",
     "element": null
   },
@@ -31,7 +31,7 @@
     "thumb": "/gallery/thumbnails/4.webp",
     "alt": "",
     "width": 1280,
-    "height": 959,
+    "height": 1707,
     "originalName": "4.webp",
     "element": null
   },
@@ -40,7 +40,7 @@
     "thumb": "/gallery/thumbnails/5.webp",
     "alt": "",
     "width": 1280,
-    "height": 1707,
+    "height": 959,
     "originalName": "5.webp",
     "element": null
   },
@@ -67,7 +67,7 @@
     "thumb": "/gallery/thumbnails/8.webp",
     "alt": "",
     "width": 1280,
-    "height": 960,
+    "height": 1707,
     "originalName": "8.webp",
     "element": null
   },
@@ -75,8 +75,8 @@
     "full": "/gallery/9.webp",
     "thumb": "/gallery/thumbnails/9.webp",
     "alt": "",
-    "width": 1238,
-    "height": 1412,
+    "width": 1280,
+    "height": 960,
     "originalName": "9.webp",
     "element": null
   },
@@ -84,8 +84,8 @@
     "full": "/gallery/10.webp",
     "thumb": "/gallery/thumbnails/10.webp",
     "alt": "",
-    "width": 1280,
-    "height": 1707,
+    "width": 1238,
+    "height": 1412,
     "originalName": "10.webp",
     "element": null
   },
@@ -93,8 +93,8 @@
     "full": "/gallery/11.webp",
     "thumb": "/gallery/thumbnails/11.webp",
     "alt": "",
-    "width": 2049,
-    "height": 1536,
+    "width": 1280,
+    "height": 1707,
     "originalName": "11.webp",
     "element": null
   },
@@ -102,8 +102,8 @@
     "full": "/gallery/12.webp",
     "thumb": "/gallery/thumbnails/12.webp",
     "alt": "",
-    "width": 1280,
-    "height": 855,
+    "width": 2049,
+    "height": 1536,
     "originalName": "12.webp",
     "element": null
   },
@@ -111,8 +111,8 @@
     "full": "/gallery/13.webp",
     "thumb": "/gallery/thumbnails/13.webp",
     "alt": "",
-    "width": 2305,
-    "height": 1537,
+    "width": 1280,
+    "height": 855,
     "originalName": "13.webp",
     "element": null
   },
@@ -129,8 +129,8 @@
     "full": "/gallery/15.webp",
     "thumb": "/gallery/thumbnails/15.webp",
     "alt": "",
-    "width": 1280,
-    "height": 960,
+    "width": 2305,
+    "height": 1537,
     "originalName": "15.webp",
     "element": null
   },
@@ -157,7 +157,7 @@
     "thumb": "/gallery/thumbnails/18.webp",
     "alt": "",
     "width": 1280,
-    "height": 753,
+    "height": 960,
     "originalName": "18.webp",
     "element": null
   },
@@ -166,7 +166,7 @@
     "thumb": "/gallery/thumbnails/19.webp",
     "alt": "",
     "width": 1280,
-    "height": 854,
+    "height": 753,
     "originalName": "19.webp",
     "element": null
   },
@@ -174,8 +174,8 @@
     "full": "/gallery/20.webp",
     "thumb": "/gallery/thumbnails/20.webp",
     "alt": "",
-    "width": 1170,
-    "height": 1900,
+    "width": 1280,
+    "height": 854,
     "originalName": "20.webp",
     "element": null
   },
@@ -183,8 +183,8 @@
     "full": "/gallery/21.webp",
     "thumb": "/gallery/thumbnails/21.webp",
     "alt": "",
-    "width": 1280,
-    "height": 960,
+    "width": 1170,
+    "height": 1900,
     "originalName": "21.webp",
     "element": null
   },
@@ -202,7 +202,7 @@
     "thumb": "/gallery/thumbnails/23.webp",
     "alt": "",
     "width": 1280,
-    "height": 1920,
+    "height": 960,
     "originalName": "23.webp",
     "element": null
   },
@@ -211,7 +211,7 @@
     "thumb": "/gallery/thumbnails/24.webp",
     "alt": "",
     "width": 1280,
-    "height": 1707,
+    "height": 1920,
     "originalName": "24.webp",
     "element": null
   },
@@ -228,8 +228,8 @@
     "full": "/gallery/26.webp",
     "thumb": "/gallery/thumbnails/26.webp",
     "alt": "",
-    "width": 768,
-    "height": 1024,
+    "width": 1280,
+    "height": 1707,
     "originalName": "26.webp",
     "element": null
   },
@@ -237,8 +237,8 @@
     "full": "/gallery/27.webp",
     "thumb": "/gallery/thumbnails/27.webp",
     "alt": "",
-    "width": 1280,
-    "height": 960,
+    "width": 768,
+    "height": 1024,
     "originalName": "27.webp",
     "element": null
   },
@@ -247,7 +247,7 @@
     "thumb": "/gallery/thumbnails/28.webp",
     "alt": "",
     "width": 1280,
-    "height": 1918,
+    "height": 960,
     "originalName": "28.webp",
     "element": null
   },
@@ -256,7 +256,7 @@
     "thumb": "/gallery/thumbnails/29.webp",
     "alt": "",
     "width": 1280,
-    "height": 1705,
+    "height": 1918,
     "originalName": "29.webp",
     "element": null
   },
@@ -265,7 +265,7 @@
     "thumb": "/gallery/thumbnails/30.webp",
     "alt": "",
     "width": 1280,
-    "height": 1707,
+    "height": 1705,
     "originalName": "30.webp",
     "element": null
   },
@@ -274,7 +274,7 @@
     "thumb": "/gallery/thumbnails/31.webp",
     "alt": "",
     "width": 1280,
-    "height": 960,
+    "height": 1707,
     "originalName": "31.webp",
     "element": null
   },
@@ -292,7 +292,7 @@
     "thumb": "/gallery/thumbnails/33.webp",
     "alt": "",
     "width": 1280,
-    "height": 855,
+    "height": 960,
     "originalName": "33.webp",
     "element": null
   },
@@ -301,7 +301,7 @@
     "thumb": "/gallery/thumbnails/34.webp",
     "alt": "",
     "width": 1280,
-    "height": 1707,
+    "height": 855,
     "originalName": "34.webp",
     "element": null
   },
@@ -310,7 +310,7 @@
     "thumb": "/gallery/thumbnails/35.webp",
     "alt": "",
     "width": 1280,
-    "height": 1918,
+    "height": 1707,
     "originalName": "35.webp",
     "element": null
   },
@@ -318,8 +318,8 @@
     "full": "/gallery/36.webp",
     "thumb": "/gallery/thumbnails/36.webp",
     "alt": "",
-    "width": 3896,
-    "height": 2787,
+    "width": 1280,
+    "height": 1918,
     "originalName": "36.webp",
     "element": null
   },
@@ -327,8 +327,8 @@
     "full": "/gallery/37.webp",
     "thumb": "/gallery/thumbnails/37.webp",
     "alt": "",
-    "width": 4096,
-    "height": 2732,
+    "width": 3896,
+    "height": 2787,
     "originalName": "37.webp",
     "element": null
   },
@@ -336,8 +336,8 @@
     "full": "/gallery/38.webp",
     "thumb": "/gallery/thumbnails/38.webp",
     "alt": "",
-    "width": 4032,
-    "height": 3024,
+    "width": 4096,
+    "height": 2732,
     "originalName": "38.webp",
     "element": null
   },
@@ -354,8 +354,8 @@
     "full": "/gallery/40.webp",
     "thumb": "/gallery/thumbnails/40.webp",
     "alt": "",
-    "width": 2868,
-    "height": 3061,
+    "width": 4032,
+    "height": 3024,
     "originalName": "40.webp",
     "element": null
   },
@@ -363,8 +363,8 @@
     "full": "/gallery/41.webp",
     "thumb": "/gallery/thumbnails/41.webp",
     "alt": "",
-    "width": 787,
-    "height": 999,
+    "width": 2868,
+    "height": 3061,
     "originalName": "41.webp",
     "element": null
   },
@@ -372,9 +372,27 @@
     "full": "/gallery/42.webp",
     "thumb": "/gallery/thumbnails/42.webp",
     "alt": "",
+    "width": 787,
+    "height": 999,
+    "originalName": "42.webp",
+    "element": null
+  },
+  {
+    "full": "/gallery/43.webp",
+    "thumb": "/gallery/thumbnails/43.webp",
+    "alt": "",
     "width": 1280,
     "height": 960,
-    "originalName": "42.webp",
+    "originalName": "43.webp",
+    "element": null
+  },
+  {
+    "full": "/gallery/44.webp",
+    "thumb": "/gallery/thumbnails/44.webp",
+    "alt": "",
+    "width": 1080,
+    "height": 720,
+    "originalName": "44.webp",
     "element": null
   }
 ]
