@@ -31,10 +31,16 @@
 <div class="w-full flex justify-center items-center text-white fill-white opacity-80">
 	<div class="md:w-2/3 w-full flex justify-between items-center md:scale-100 scale-75">
 		{#each reviews as review}
-			<a href={review.link} aria-label="See our {review.name} Reviews" rel="noopener noreferrer" target="_blank" class="hover:opacity-75">
+			<a
+				href={review.link}
+				aria-label="See our {review.name} Reviews"
+				rel="noopener noreferrer"
+				target="_blank"
+				class="hover:opacity-75"
+			>
 				<div class="flex flex-col items-center justify-center space-y-1">
 					<div class="w-12 h-12 flex items-center justify-center">
-						<svelte:component this={review.svg}  />
+						<svelte:component this={review.svg} />
 					</div>
 					<div class="flex items-center space-x-2" aria-hidden="true">
 						<p>{review.rating}</p>
