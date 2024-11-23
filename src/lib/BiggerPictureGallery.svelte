@@ -15,6 +15,16 @@
   let galleryElement: HTMLElement;
   let masonry: any;
 
+  // Preload an image
+  function preloadImage(src: string): Promise<void> {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve();
+      img.onerror = reject;
+      img.src = src;
+    });
+  }
+
   onMount(async () => {
     const { default: importedGalleryData } = await import('$lib/gallery.json');
     galleryData = importedGalleryData;
@@ -23,7 +33,8 @@
       const Masonry = (await import('masonry-layout')).default;
       
       bp = BiggerPicture({
-        target: document.body
+        target: document.body,
+        preload: true  // Enable preloading
       });
 
       // Initialize masonry after images are loaded
@@ -37,7 +48,13 @@
           fitWidth: true,
           percentPosition: false,
           transitionDuration: 0,
+          initLayout: false  // Don't layout immediately
         });
+
+        // Force layout after a brief delay
+        setTimeout(() => {
+          masonry.layout();
+        }, 100);
       };
 
       // Wait for images to load before initializing masonry
@@ -63,9 +80,13 @@
       // Initialize masonry anyway after a timeout in case some images fail to load
       setTimeout(initMasonry, 1000);
 
-      // Re-layout masonry on window resize
+      // Re-layout masonry on window resize with debounce
+      let resizeTimer: any;
       window.addEventListener('resize', () => {
-        if (masonry) masonry.layout();
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          if (masonry) masonry.layout();
+        }, 100);
       });
     }
 
@@ -75,7 +96,7 @@
     };
   });
 
-  function openGallery(index: number) {
+  async function openGallery(index: number) {
     const items = galleryData.map(img => ({
       img: img.full,
       thumb: img.thumb,
@@ -83,6 +104,17 @@
       width: img.width,
       height: img.height,
     }));
+
+    // Preload the clicked image and adjacent images
+    try {
+      await Promise.all([
+        preloadImage(items[index].img),
+        index > 0 && preloadImage(items[index - 1].img),
+        index < items.length - 1 && preloadImage(items[index + 1].img)
+      ]);
+    } catch (e) {
+      console.warn('Failed to preload some images');
+    }
 
     bp?.open({
       items,
@@ -101,7 +133,6 @@
     bind:this={galleryElement}
     style="--thumbnail-width: {thumbnailWidth}; --gap: {gap}"
   >
-    <!-- Element for masonry sizing -->
     <div class="gallery-sizer"></div>
     
     {#each galleryData as image, i}
