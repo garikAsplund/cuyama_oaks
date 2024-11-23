@@ -80,7 +80,7 @@
     cursor: pointer;
     overflow: hidden;
     border-radius: 8px;
-    background: #f5f5f5;
+    background: #191919;
   }
 
   .gallery-item img {
