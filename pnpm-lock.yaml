@@ -11,6 +11,9 @@ importers:
       '@vercel/analytics':
         specifier: ^1.4.0
         version: 1.4.0(@sveltejs/kit@2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.1.2)(vite@5.4.10(sass-embedded@1.80.4)))(svelte@5.1.2)(vite@5.4.10(sass-embedded@1.80.4)))(svelte@5.1.2)
+      bigger-picture:
+        specifier: ^1.1.18
+        version: 1.1.18
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^3.0.0
@@ -558,6 +561,9 @@ packages:
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+
+  bigger-picture@1.1.18:
+    resolution: {integrity: sha512-MertCM7gFaEVQjJ6UA3wL+MsdHG81VhLrcd8+axQC2rjcTX6jt4JB0LnNayR8KcV3gukOs/NGJGdzoaUchh0mQ==}
 
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
@@ -1673,6 +1679,8 @@ snapshots:
   axobject-query@4.1.0: {}
 
   balanced-match@1.0.2: {}
+
+  bigger-picture@1.1.18: {}
 
   binary-extensions@2.3.0: {}
 
