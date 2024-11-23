@@ -1,122 +1,101 @@
 [
   {
-    "full": "/gallery/1.jpeg",
-    "thumb": "/gallery/thumbnails/1.jpeg",
+    "full": "/gallery/1.webp",
+    "thumb": "/gallery/thumbnails/1.webp",
     "alt": "",
     "width": 2049,
     "height": 1536,
+    "originalName": "1.jpeg",
     "element": null
   },
   {
-    "full": "/gallery/10.jpeg",
-    "thumb": "/gallery/thumbnails/10.jpeg",
+    "full": "/gallery/10.webp",
+    "thumb": "/gallery/thumbnails/10.webp",
     "alt": "",
     "width": 2868,
     "height": 3061,
+    "originalName": "10.jpeg",
     "element": null
   },
   {
-    "full": "/gallery/2.jpeg",
-    "thumb": "/gallery/thumbnails/2.jpeg",
+    "full": "/gallery/2.webp",
+    "thumb": "/gallery/thumbnails/2.webp",
     "alt": "",
     "width": 2305,
     "height": 1537,
+    "originalName": "2.jpeg",
     "element": null
   },
   {
-    "full": "/gallery/3.jpeg",
-    "thumb": "/gallery/thumbnails/3.jpeg",
+    "full": "/gallery/3.webp",
+    "thumb": "/gallery/thumbnails/3.webp",
     "alt": "",
     "width": 1920,
     "height": 1146,
+    "originalName": "3.jpeg",
     "element": null
   },
   {
-    "full": "/gallery/4.jpeg",
-    "thumb": "/gallery/thumbnails/4.jpeg",
+    "full": "/gallery/4.webp",
+    "thumb": "/gallery/thumbnails/4.webp",
     "alt": "",
     "width": 2305,
     "height": 1537,
+    "originalName": "4.jpeg",
     "element": null
   },
   {
-    "full": "/gallery/5.jpeg",
-    "thumb": "/gallery/thumbnails/5.jpeg",
+    "full": "/gallery/5.webp",
+    "thumb": "/gallery/thumbnails/5.webp",
     "alt": "",
     "width": 3896,
     "height": 2787,
+    "originalName": "5.jpeg",
     "element": null
   },
   {
-    "full": "/gallery/6.jpeg",
-    "thumb": "/gallery/thumbnails/6.jpeg",
+    "full": "/gallery/6.webp",
+    "thumb": "/gallery/thumbnails/6.webp",
     "alt": "",
     "width": 4096,
     "height": 2732,
+    "originalName": "6.jpeg",
     "element": null
   },
   {
-    "full": "/gallery/7.jpeg",
-    "thumb": "/gallery/thumbnails/7.jpeg",
+    "full": "/gallery/7.webp",
+    "thumb": "/gallery/thumbnails/7.webp",
     "alt": "",
     "width": 3024,
     "height": 4032,
+    "originalName": "7.jpeg",
     "element": null
   },
   {
-    "full": "/gallery/8.jpeg",
-    "thumb": "/gallery/thumbnails/8.jpeg",
+    "full": "/gallery/8.webp",
+    "thumb": "/gallery/thumbnails/8.webp",
     "alt": "",
     "width": 1290,
     "height": 1599,
+    "originalName": "8.jpeg",
     "element": null
   },
   {
-    "full": "/gallery/9.jpeg",
-    "thumb": "/gallery/thumbnails/9.jpeg",
+    "full": "/gallery/9.webp",
+    "thumb": "/gallery/thumbnails/9.webp",
     "alt": "",
     "width": 4032,
     "height": 3024,
+    "originalName": "9.jpeg",
     "element": null
   },
   {
-    "full": "/gallery/flower.webp",
-    "thumb": "/gallery/thumbnails/flower.webp",
-    "alt": "",
-    "width": 1280,
-    "height": 960,
-    "element": null
-  },
-  {
-    "full": "/gallery/main-grid1.webp",
-    "thumb": "/gallery/thumbnails/main-grid1.webp",
-    "alt": "",
-    "width": 1280,
-    "height": 855,
-    "element": null
-  },
-  {
-    "full": "/gallery/main-grid2.webp",
-    "thumb": "/gallery/thumbnails/main-grid2.webp",
-    "alt": "",
-    "width": 1280,
-    "height": 855,
-    "element": null
-  },
-  {
-    "full": "/gallery/main-grid3.webp",
-    "thumb": "/gallery/thumbnails/main-grid3.webp",
-    "alt": "",
-    "width": 1280,
-    "height": 854,
-    "element": null
-  },
-  {
-    "full": "/gallery/natesbday.jpeg",
-    "thumb": "/gallery/thumbnails/natesbday.jpeg",
+    "full": "/gallery/natesbday.webp",
+    "thumb": "/gallery/thumbnails/natesbday.webp",
     "alt": "",
     "width": 6000,
     "height": 4000,
+    "originalName": "natesbday.jpeg",
     "element": null
   }
 ]
