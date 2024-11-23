@@ -4,35 +4,107 @@
 
 	const galleryImages = [
 		{
-			id: 'tent1', // Unique ID for keyed each block
+			id: 'tent1',
 			thumb: '/gallery/flower.webp',
 			full: '/gallery/flower.webp',
 			alt: 'Luxury glamping tent interior',
-			// width: 1200,
-			// height: 800,
-			caption: 'Deluxe tent with mountain view'
+			caption: 'If you want captions, great'
 		},
 		{
-			id: 'tent2', // Unique ID for keyed each block
+			id: 'tent2',
 			thumb: '/gallery/main-grid1.webp',
 			full: '/gallery/main-grid1.webp',
-			alt: 'Luxury glamping tent interior',
-			// width: 1200,
-			// height: 800,
+			alt: 'If you do not want captions, great',
 			caption: 'Deluxe tent with mountain view'
 		},
 		{
-			id: 'tent3', // Unique ID for keyed each block
+			id: 'tent3',
 			thumb: '/gallery/main-grid2.webp',
 			full: '/gallery/main-grid2.webp',
+			alt: 'Luxury glamping tent interior'
+		},
+		{
+			id: 'tent3',
+			thumb: '/gallery/main-grid3.webp',
+			full: '/gallery/main-grid3.webp',
 			alt: 'Luxury glamping tent interior',
-			// width: 1200,
-			// height: 800,
-			caption: 'Deluxe tent with mountain view'
+			caption: ':)'
+		},
+		{
+			id: 'tent3',
+			thumb: '/gallery/1.jpeg',
+			full: '/gallery/1.jpeg',
+			alt: 'Luxury glamping tent interior',
+			caption: ':)'
+		},
+		{
+			id: 'tent3',
+			thumb: '/gallery/2.jpeg',
+			full: '/gallery/2.jpeg',
+			alt: 'Luxury glamping tent interior',
+			caption: ':)'
+		},
+		{
+			id: 'tent3',
+			thumb: '/gallery/3.jpeg',
+			full: '/gallery/3.jpeg',
+			alt: 'Luxury glamping tent interior',
+			caption: ':)'
+		},
+		{
+			id: 'tent3',
+			thumb: '/gallery/4.jpeg',
+			full: '/gallery/4.jpeg',
+			alt: 'Luxury glamping tent interior',
+			caption: ':)'
+		},
+		{
+			id: 'tent3',
+			thumb: '/gallery/5.jpeg',
+			full: '/gallery/5.jpeg',
+			alt: 'Luxury glamping tent interior',
+			caption: ':)'
+		},
+		{
+			id: 'tent3',
+			thumb: '/gallery/6.jpeg',
+			full: '/gallery/6.jpeg',
+			alt: 'Luxury glamping tent interior',
+			caption: ':)'
+		},
+		{
+			id: 'tent3',
+			thumb: '/gallery/7.jpeg',
+			full: '/gallery/7.jpeg',
+			alt: 'Luxury glamping tent interior',
+			caption: ':)'
+		},
+		{
+			id: 'tent3',
+			thumb: '/gallery/8.jpeg',
+			full: '/gallery/8.jpeg',
+			alt: 'Luxury glamping tent interior',
+			caption: ':)'
+		},
+		{
+			id: 'tent3',
+			thumb: '/gallery/9.jpeg',
+			full: '/gallery/9.jpeg',
+			alt: 'Luxury glamping tent interior',
+			caption: ':)'
+		},
+		{
+			id: 'tent3',
+			thumb: '/gallery/10.jpeg',
+			full: '/gallery/10.jpeg',
+			alt: 'Luxury glamping tent interior',
+			caption: ':)'
 		}
 	];
 </script>
 
-<div class="relative z-0 flex flex-col min-h-screen w-full max-w-screen bg-black">
-	<BiggerPictureGallery images={galleryImages} maxZoom={3} scale={0.95} intro="fadeup" />
-</div>
+<div class="min-h-screen w-full bg-black flex flex-col items-center px-4 py-8">
+    <div class="w-full max-w-[1400px]">
+      <BiggerPictureGallery maxZoom={3} scale={0.95} intro="fadeup" />
+    </div>
+  </div>

@@ -1,0 +1,122 @@
+[
+  {
+    "full": "/gallery/1.jpeg",
+    "thumb": "/gallery/thumbnails/1.jpeg",
+    "alt": "",
+    "width": 2049,
+    "height": 1536,
+    "element": null
+  },
+  {
+    "full": "/gallery/10.jpeg",
+    "thumb": "/gallery/thumbnails/10.jpeg",
+    "alt": "",
+    "width": 2868,
+    "height": 3061,
+    "element": null
+  },
+  {
+    "full": "/gallery/2.jpeg",
+    "thumb": "/gallery/thumbnails/2.jpeg",
+    "alt": "",
+    "width": 2305,
+    "height": 1537,
+    "element": null
+  },
+  {
+    "full": "/gallery/3.jpeg",
+    "thumb": "/gallery/thumbnails/3.jpeg",
+    "alt": "",
+    "width": 1920,
+    "height": 1146,
+    "element": null
+  },
+  {
+    "full": "/gallery/4.jpeg",
+    "thumb": "/gallery/thumbnails/4.jpeg",
+    "alt": "",
+    "width": 2305,
+    "height": 1537,
+    "element": null
+  },
+  {
+    "full": "/gallery/5.jpeg",
+    "thumb": "/gallery/thumbnails/5.jpeg",
+    "alt": "",
+    "width": 3896,
+    "height": 2787,
+    "element": null
+  },
+  {
+    "full": "/gallery/6.jpeg",
+    "thumb": "/gallery/thumbnails/6.jpeg",
+    "alt": "",
+    "width": 4096,
+    "height": 2732,
+    "element": null
+  },
+  {
+    "full": "/gallery/7.jpeg",
+    "thumb": "/gallery/thumbnails/7.jpeg",
+    "alt": "",
+    "width": 3024,
+    "height": 4032,
+    "element": null
+  },
+  {
+    "full": "/gallery/8.jpeg",
+    "thumb": "/gallery/thumbnails/8.jpeg",
+    "alt": "",
+    "width": 1290,
+    "height": 1599,
+    "element": null
+  },
+  {
+    "full": "/gallery/9.jpeg",
+    "thumb": "/gallery/thumbnails/9.jpeg",
+    "alt": "",
+    "width": 4032,
+    "height": 3024,
+    "element": null
+  },
+  {
+    "full": "/gallery/flower.webp",
+    "thumb": "/gallery/thumbnails/flower.webp",
+    "alt": "",
+    "width": 1280,
+    "height": 960,
+    "element": null
+  },
+  {
+    "full": "/gallery/main-grid1.webp",
+    "thumb": "/gallery/thumbnails/main-grid1.webp",
+    "alt": "",
+    "width": 1280,
+    "height": 855,
+    "element": null
+  },
+  {
+    "full": "/gallery/main-grid2.webp",
+    "thumb": "/gallery/thumbnails/main-grid2.webp",
+    "alt": "",
+    "width": 1280,
+    "height": 855,
+    "element": null
+  },
+  {
+    "full": "/gallery/main-grid3.webp",
+    "thumb": "/gallery/thumbnails/main-grid3.webp",
+    "alt": "",
+    "width": 1280,
+    "height": 854,
+    "element": null
+  },
+  {
+    "full": "/gallery/natesbday.jpeg",
+    "thumb": "/gallery/thumbnails/natesbday.jpeg",
+    "alt": "",
+    "width": 6000,
+    "height": 4000,
+    "element": null
+  }
+]

@@ -45,27 +45,27 @@
 			<LogoSvg />
 		</a>
 		<a
-			href="#About"
+			href="./#About"
 			class="p-2 hover:opacity-75 {activeSection == 'About' ? 'border-black border-b' : ''}"
 			aria-label="About">About</a
 		>
 		<a
-			href="#Glamping"
+			href="./#Glamping"
 			class="p-2 hover:opacity-75 {activeSection === 'Glamping' ? 'border-black border-b' : ''}"
 			aria-label="Glamping">Glamping</a
 		>
 		<a
-			href="#Camping"
+			href="./#Camping"
 			class="p-2 hover:opacity-75 {activeSection === 'Camping' ? 'border-black border-b' : ''}"
 			aria-label="Camping">Camping</a
 		>
 		<a
-			href="#Explore"
+			href="./#Explore"
 			class="p-2 hover:opacity-75 {activeSection === 'Explore' ? 'border-black border-b' : ''}"
 			aria-label="Explore">Explore</a
 		>
 		<a
-		href="#Zoo"
+		href="./#Zoo"
 		class="p-2 hover:opacity-75 {activeSection === 'Zoo' ? 'border-black border-b' : ''} hidden md:flex"
 		aria-label="Petting Zoo">Petting Zoo</a
 	><a
