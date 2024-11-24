@@ -1,7 +1,3 @@
-<script lang="ts">
-	import { fade } from 'svelte/transition';
-</script>
-
 <div class="relative w-full h-full">
 	<enhanced:img
 		src="/static/about/cuyama_oaks_bg_tiny.jpeg"
