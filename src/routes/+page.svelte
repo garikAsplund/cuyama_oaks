@@ -15,6 +15,7 @@
 	import WeatherWidget from '$lib/WeatherWidget.svelte';
 	import Video from '$lib/MainPage/Video.svelte';
 	import Zoo from '$lib/MainPage/Zoo.svelte';
+	import HeroImage from '$lib/MainPage/HeroImage.svelte';
 
 	let scrollY = $state(0);
 
@@ -52,13 +53,14 @@
 		<div class="overflow-x-hidden">
 			<div class="relative h-auto">
 				<div class="relative h-screen">
-					<enhanced:img
+					<!-- <enhanced:img
 						src="/static/about/cuyama_oaks_bg.jpeg"
 						alt="Cuyama Oaks Ranch"
 						fetchpriority="high"
 						loading="eager"
 						class="w-full h-full object-cover"
-					/>
+					/> -->
+					<HeroImage />
 					<div class="absolute inset-0 bg-black bg-opacity-30"></div>
 					<Nav {scrollY} {isVisible} />
 					<header
