@@ -106,7 +106,9 @@
 
 		<enhanced:img
 			src="/static/sections/baseball.jpeg"
-			alt="Cuyama Oaks Ranch"
+			alt="Having a good time at Cuyama Oaks Ranch"
+			loading="lazy"
+			sizes="min(100vw, 2048px)"
 			class="w-full object-cover sticky h-[66vh] bg-cover bg-center flex justify-center items-center z-10 max-w-full"
 		/>
 
@@ -114,7 +116,9 @@
 
 		<enhanced:img
 			src="/static/sections/nightshot.jpeg"
-			alt="Cuyama Oaks Ranch"
+			alt="Nate's birthday party at Cuyama Oaks Ranch"
+			loading="lazy"
+			sizes="min(100vw, 2048px)"
 			class="w-full object-cover sticky h-[66vh] bg-cover bg-center flex justify-center items-center z-10 max-w-full"
 		/>
 
@@ -122,7 +126,9 @@
 
 		<enhanced:img
 			src="/static/sections/goats.jpeg"
-			alt="Cuyama Oaks Ranch"
+			alt="Goats at Cuyama Oaks Ranch"
+			loading="lazy"
+			sizes="min(100vw, 2048px)"
 			class="sticky h-screen object-cover bg-cover bg-center flex justify-center items-center z-10 max-w-full"
 		/>
 
@@ -134,6 +140,8 @@
 			<enhanced:img
 				src="/static/sections/welcome.jpeg"
 				alt="Welcome to Cuyama Oaks Ranch"
+				loading="lazy"
+				sizes="min(100vw, 2048px)"
 				class="absolute inset-0 w-full h-full object-cover z-0"
 			/>
 			<ToTopButton class="relative z-10" />

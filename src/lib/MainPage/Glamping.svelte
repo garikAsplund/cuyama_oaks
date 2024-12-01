@@ -24,25 +24,33 @@
 
 			<div class="flex flex-col justify-center h-full gap-4">
 				<enhanced:img
-						src="/static/glamping/glamping-outside.jpeg"
-						alt="Glamping view 2"
-						class="w-full h-80 object-cover object-left rounded-md"
-					/>
+					src="/static/glamping/glamping-outside.jpeg"
+					alt="Glamping view 1"
+					loading="lazy"
+					sizes="(min-width: 1024px) 800px, min(100vw - 2rem, 600px)"
+					class="w-full h-80 object-cover object-left rounded-md"
+				/>
 				<div class="grid grid-cols-2 gap-4">
 					<enhanced:img
-					src="/static/glamping/glamping.webp"
-					alt="Glamping view 3"
-					class=" w-full h-96 object-cover object-top rounded-md"
-				/>
+						src="/static/glamping/glamping.webp"
+						alt="Glamping view 2"
+						loading="lazy"
+						sizes="(min-width: 1024px) 800px, min(100vw - 2rem, 600px)"
+						class=" w-full h-96 object-cover object-top rounded-md"
+					/>
 					<enhanced:img
 						src="/static/glamping/glamping-night.jpeg"
-						alt="Glamping view 1"
+						alt="Glamping view 3"
+						loading="lazy"
+						sizes="(min-width: 1024px) 800px, min(100vw - 2rem, 600px)"
 						class="w-full h-96 object-cover object-bottom rounded-md"
 					/>
 				</div>
 				<enhanced:img
 					src="/static/glamping/glamping-inside.jpeg"
-					alt="Glamping view 3"
+					alt="Glamping view 4"
+					loading="lazy"
+					sizes="(min-width: 1024px) 800px, min(100vw - 2rem, 600px)"
 					class="w-full h-80 object-cover object-center rounded-md"
 				/>
 			</div>
@@ -65,25 +73,25 @@
 		</div>
 		<div class="grid md:grid-cols-3 grid-cols-1 gap-8 my-16">
 			{#each glampsites as glampsite}
-					<div>
-						<!-- <h2 class="text-2xl font-bold">{glampsite.name}</h2> -->
-						<div class="pl-4">
-							<!-- <h3 class="text-lg font-semibold pt-4">{amenity.tag}</h3> -->
-							<!-- <p class="text-lg list-none pt-2">{glampsite.description}</p> -->
-							<div class="flex w-full justify-center">
-								<a
-									href={glampsite.link}
-									target="_blank"
-									rel="noopener noreferrer"
-									class="text-lg p-2 border-2 mt-8 border-black hover:opacity-75"
-									aria-label="Book {glampsite.name} now!"
-								>
-									Book {glampsite.name}</a
-								>
-							</div>
+				<div>
+					<!-- <h2 class="text-2xl font-bold">{glampsite.name}</h2> -->
+					<div class="pl-4">
+						<!-- <h3 class="text-lg font-semibold pt-4">{amenity.tag}</h3> -->
+						<!-- <p class="text-lg list-none pt-2">{glampsite.description}</p> -->
+						<div class="flex w-full justify-center">
+							<a
+								href={glampsite.link}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="text-lg p-2 border-2 mt-8 border-black hover:opacity-75"
+								aria-label="Book {glampsite.name} now!"
+							>
+								Book {glampsite.name}</a
+							>
 						</div>
 					</div>
-				{/each}
+				</div>
+			{/each}
 		</div>
 	</div>
 </section>

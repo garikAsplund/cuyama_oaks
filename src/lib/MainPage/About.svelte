@@ -6,7 +6,7 @@
 	let imageHeight = $state(0);
 
 	onMount(() => {
-		let imageElement: HTMLDivElement = document.getElementById('gay-boys');
+		let imageElement: HTMLDivElement = document.getElementById('your-hosts');
 
 		function calculateImageHeight() {
 			if (imageElement) {
@@ -31,8 +31,10 @@
 
 			<enhanced:img
 				src="/static/about/nate+ricky.jpeg"
-				id="gay-boys"
+				id="your-hosts"
 				alt="Your hosts Nate and Ricky"
+				loading="lazy"
+				sizes="(min-width: 768px) 50vw, 100vw"
 				class="object-contain absolute top-20 right-[5%] w-1/2 z-20"
 				style="transform: translateY(calc({scrollY} * 0.12px));"
 			/>

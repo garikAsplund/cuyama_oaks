@@ -60,21 +60,29 @@
 				<enhanced:img
 					src="/static/zoo/goats.jpeg"
 					alt="Campsite overview"
+					loading="lazy"
+					sizes="(min-width: 1024px) 800px, min(100vw - 2rem, 600px)"
 					class="w-full h-96 object-cover object-center rounded-md"
 				/>
 				<enhanced:img
 					src="/static/zoo/pigs.webp"
 					alt="Camp as homebase"
+					loading="lazy"
+					sizes="(min-width: 1024px) 800px, min(100vw - 2rem, 600px)"
 					class="w-full h-96 object-cover object-top rounded-md"
 				/>
 				<enhanced:img
 					src="/static/zoo/eggs.webp"
 					alt="Camp at the base of the mountains"
+					loading="lazy"
+					sizes="(min-width: 1024px) 800px, min(100vw - 2rem, 600px)"
 					class="w-full h-96 object-cover object-right rounded-md"
 				/>
 				<enhanced:img
 					src="/static/zoo/chicken.jpeg"
 					alt="Camp at the base of the mountains"
+					loading="lazy"
+					sizes="(min-width: 1024px) 800px, min(100vw - 2rem, 600px)"
 					class="w-full h-96 object-cover object-right rounded-md"
 				/>
 			</div>

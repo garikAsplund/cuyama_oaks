@@ -4,6 +4,7 @@
 		alt="Cuyama Oaks Ranch"
 		fetchpriority="high"
 		loading="eager"
+		sizes="min(100vw, 2048px)"
 		class="absolute inset-0 w-full h-full object-cover"
 	/>
 
@@ -12,6 +13,7 @@
 		alt="Cuyama Oaks Ranch"
 		fetchpriority="high"
 		loading="eager"
+		sizes="min(100vw, 2048px)"
 		class="absolute inset-0 w-full h-full object-cover"
 	/>
 </div>

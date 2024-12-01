@@ -51,6 +51,7 @@
 							<enhanced:img
 								src={activity.image}
 								alt={activity.title}
+								loading="lazy"
 								class="w-full h-full object-cover"
 							/>
 						</a>
@@ -69,6 +70,7 @@
 					><enhanced:img
 						src="/static/explore/visit-cuyama.png"
 						alt="Visit Cuyama town directory"
+						loading="lazy"
 						class="invert md:h-24 h-16 w-auto"
 					/>
 					<p class="md:mt-8 mt-4 md:text-3xl text-lg">TOWN DIRECTORY</p>
