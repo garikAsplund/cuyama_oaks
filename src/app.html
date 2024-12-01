@@ -2,9 +2,27 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="%sveltekit.assets%/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
+		<!-- Fonts -->
+		<link
+			rel="preload"
+			href="/fonts/BonaNovaSC-Regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/fonts/BonaNovaSC-Bold.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+
+		%sveltekit.head%
+		
 		<!-- Title -->
 		<title>Cuyama Oaks Ranch | Glamping, Camping & Adventures</title>
 		<meta
@@ -54,24 +72,6 @@
 				"url": "https://cuyamaoaksranch.com"
 			}
 		</script>
-
-		<!-- Fonts -->
-		<link
-			rel="preload"
-			href="/fonts/BonaNovaSC-Regular.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-		<link
-			rel="preload"
-			href="/fonts/BonaNovaSC-Bold.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-
-		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
