@@ -53,13 +53,6 @@
 		<div class="overflow-x-hidden">
 			<div class="relative h-auto">
 				<div class="relative h-screen">
-					<!-- <enhanced:img
-						src="/static/about/cuyama_oaks_bg.jpeg"
-						alt="Cuyama Oaks Ranch"
-						fetchpriority="high"
-						loading="eager"
-						class="w-full h-full object-cover"
-					/> -->
 					<HeroImage />
 					<div class="absolute inset-0 bg-black bg-opacity-30"></div>
 					<Nav {scrollY} {isVisible} />
@@ -69,7 +62,7 @@
 					>
 						<div class="container mx-auto" style="transform: translateY(calc({scrollY * -1.05}px))">
 							<h1
-								class="text-4xl sm:text-6xl md:text-8xl md:font-bold text-white font-bona transition-all"
+								class="text-4xl sm:text-6xl md:text-8xl md:font-bold text-white font-bona"
 							>
 								Cuyama Oaks Ranch
 							</h1>
