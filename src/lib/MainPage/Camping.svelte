@@ -26,17 +26,23 @@
 				<enhanced:img
 					src="/static/camping/camp8.webp"
 					alt="Campsite overview"
+					loading="lazy"
+					sizes="(min-width: 1024px) 800px, min(100vw - 2rem, 600px)"
 					class="w-full h-48 object-cover object-center rounded-md"
 				/>
 				<div class="grid grid-cols-2 gap-4">
 					<enhanced:img
 						src="/static/camping/camp5.webp"
 						alt="Camp as homebase"
+						loading="lazy"
+						sizes="(min-width: 1024px) 800px, min(100vw - 2rem, 600px)"
 						class="w-full h-96 object-cover object-top rounded-md"
 					/>
 					<enhanced:img
 						src="/static/camping/camp7.webp"
 						alt="Camp at the base of the mountains"
+						loading="lazy"
+						sizes="(min-width: 1024px) 800px, min(100vw - 2rem, 600px)"
 						class="w-full h-96 object-cover object-right rounded-md"
 					/>
 				</div>
@@ -44,6 +50,8 @@
 				<enhanced:img
 					src="/static/camping/poop-review.png"
 					alt="Poop review"
+					loading="lazy"
+					sizes="(min-width: 1024px) 800px, min(100vw - 2rem, 600px)"
 					class="w-full h-auto object-contain object-top rounded-md"
 				/>
 			</div>

@@ -15,6 +15,7 @@
 	import WeatherWidget from '$lib/WeatherWidget.svelte';
 	import Video from '$lib/MainPage/Video.svelte';
 	import Zoo from '$lib/MainPage/Zoo.svelte';
+	import HeroImage from '$lib/MainPage/HeroImage.svelte';
 
 	let scrollY = $state(0);
 
@@ -52,13 +53,7 @@
 		<div class="overflow-x-hidden">
 			<div class="relative h-auto">
 				<div class="relative h-screen">
-					<enhanced:img
-						src="/static/about/cuyama_oaks_bg.jpeg"
-						alt="Cuyama Oaks Ranch"
-						fetchpriority="high"
-						loading="eager"
-						class="w-full h-full object-cover"
-					/>
+					<HeroImage />
 					<div class="absolute inset-0 bg-black bg-opacity-30"></div>
 					<Nav {scrollY} {isVisible} />
 					<header
@@ -67,7 +62,7 @@
 					>
 						<div class="container mx-auto" style="transform: translateY(calc({scrollY * -1.05}px))">
 							<h1
-								class="text-4xl sm:text-6xl md:text-8xl md:font-bold text-white font-bona transition-all"
+								class="text-4xl sm:text-6xl md:text-8xl md:font-bold text-white font-bona"
 							>
 								Cuyama Oaks Ranch
 							</h1>
@@ -104,7 +99,9 @@
 
 		<enhanced:img
 			src="/static/sections/baseball.jpeg"
-			alt="Cuyama Oaks Ranch"
+			alt="Having a good time at Cuyama Oaks Ranch"
+			loading="lazy"
+			sizes="min(100vw, 2048px)"
 			class="w-full object-cover sticky h-[66vh] bg-cover bg-center flex justify-center items-center z-10 max-w-full"
 		/>
 
@@ -112,7 +109,9 @@
 
 		<enhanced:img
 			src="/static/sections/nightshot.jpeg"
-			alt="Cuyama Oaks Ranch"
+			alt="Nate's birthday party at Cuyama Oaks Ranch"
+			loading="lazy"
+			sizes="min(100vw, 2048px)"
 			class="w-full object-cover sticky h-[66vh] bg-cover bg-center flex justify-center items-center z-10 max-w-full"
 		/>
 
@@ -120,7 +119,9 @@
 
 		<enhanced:img
 			src="/static/sections/goats.jpeg"
-			alt="Cuyama Oaks Ranch"
+			alt="Goats at Cuyama Oaks Ranch"
+			loading="lazy"
+			sizes="min(100vw, 2048px)"
 			class="sticky h-screen object-cover bg-cover bg-center flex justify-center items-center z-10 max-w-full"
 		/>
 
@@ -132,6 +133,8 @@
 			<enhanced:img
 				src="/static/sections/welcome.jpeg"
 				alt="Welcome to Cuyama Oaks Ranch"
+				loading="lazy"
+				sizes="min(100vw, 2048px)"
 				class="absolute inset-0 w-full h-full object-cover z-0"
 			/>
 			<ToTopButton class="relative z-10" />

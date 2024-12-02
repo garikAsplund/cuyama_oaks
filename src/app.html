@@ -2,9 +2,27 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="%sveltekit.assets%/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
+		<!-- Fonts -->
+		<link
+			rel="preload"
+			href="/fonts/BonaNovaSC-Regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/fonts/BonaNovaSC-Bold.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+
+		%sveltekit.head%
+		
 		<!-- Title -->
 		<title>Cuyama Oaks Ranch | Glamping, Camping & Adventures</title>
 		<meta
@@ -14,7 +32,9 @@
 
 		<!-- OG tags -->
 		<meta property="og:title" content="Cuyama Oaks Ranch | Glamping, Camping & Adventures" />
-		<meta property="og:description" content="Stay at Cuyama Oaks Ranch, a glamping and camping destination for family and friends in Southern California's beautiful Hidden Valley of Enchantment!"
+		<meta
+			property="og:description"
+			content="Stay at Cuyama Oaks Ranch, a glamping and camping destination for family and friends in Southern California's beautiful Hidden Valley of Enchantment!"
 		/>
 		<meta property="og:image" content="https://cuyamaoaksranch.com/about/cuyama_oaks_bg.jpeg" />
 		<meta property="og:url" content="https://cuyamaoaksranch.com" />
@@ -23,9 +43,11 @@
 		<!-- Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="Cuyama Oaks Ranch | Glamping, Camping & Adventures" />
-		<meta name="twitter:description" content="Stay at Cuyama Oaks Ranch, a glamping and camping destination for family and friends in Southern California's beautiful Hidden Valley of Enchantment!"
+		<meta
+			name="twitter:description"
+			content="Stay at Cuyama Oaks Ranch, a glamping and camping destination for family and friends in Southern California's beautiful Hidden Valley of Enchantment!"
 		/>
-		<meta name="twitter:image" content="https://cuyamaoaksranch.com/about/cuyama_oaks_bg.jpeg" />		
+		<meta name="twitter:image" content="https://cuyamaoaksranch.com/about/cuyama_oaks_bg.jpeg" />
 
 		<script type="application/ld+json">
 			{
@@ -49,13 +71,7 @@
 				},
 				"url": "https://cuyamaoaksranch.com"
 			}
-			</script>			
-
-		<!-- Fonts -->
-		<link rel="preload" href="/fonts/BonaNovaSC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-		<link rel="preload" href="/fonts/BonaNovaSC-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-	
-		%sveltekit.head%
+		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>

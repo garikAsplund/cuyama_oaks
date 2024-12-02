@@ -3,35 +3,17 @@
 @import 'tailwindcss/utilities';
 
 @font-face {
-	font-family: 'Bona Nova SC';
-	src: url('/fonts/BonaNovaSC-Regular.ttf') format('truetype');
-	font-weight: normal; /* Regular weight */
-	font-style: normal; /* Regular style */
-	font-display: swap;
+    font-family: 'Bona Nova SC';
+    src: url('/fonts/BonaNovaSC-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: 'Bona Nova SC';
-	src: url('/fonts/BonaNovaSC-Bold.ttf') format('truetype');
-	font-weight: bold; /* Bold weight */
-	font-style: normal; /* Regular style */
-	font-display: swap;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	html {
-		scroll-behavior: smooth;
-	}
-}
-
-@media (max-width: 767px) {
-	html {
-		scroll-behavior: auto;
-	}
-}
-
-@media (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
+    font-family: 'Bona Nova SC';
+    src: url('/fonts/BonaNovaSC-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
